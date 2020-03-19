@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<header class="navigation">
+		<a href="index.html">Strona główna</a>
+	</header>
+	<main>
+		<article>
+			<header class="mainHeader" id="up">
+				<h1 class="h1">Tydzień III</h1>
+				<img src="tydzień3.JPG" alt="Tydzień III">
+			</header>
+
+			<h2 class="sectionHeader1">Kanban (To Do, Doing, Done)</h2>
+			<p class="paragraph">- ułatwia śledzenie postępów prac/nauki</p>
+			<p class="paragraph">- zalecane trzymanie jednego zadania w "doing"</p>
+			<p class="paragraph">- dobrze opisuj "definition of done"</p>
+			<p class="paragraph">- można stosować offline (kartka,tablica)</p>
+			<p class="paragraph">- można stosować online - trello.com (darmowe)</p>
+			<h2 class="sectionHeader1">Lorem ipsum - tekst o niczym (skrót lorem)</h2>
+			<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque, sequi facilis laudantium nesciunt
+				obcaecati mollitia pariatur amet odit! Consequatur odio quaerat explicabo quis facilis assumenda illum
+				ipsa voluptas excepturi.</p>
+			<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque, sequi facilis laudantium nesciunt
+				obcaecati mollitia pariatur amet odit! Consequatur odio quaerat explicabo quis facilis assumenda illum
+				ipsa voluptas excepturi.</p>
+			<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque, sequi facilis laudantium nesciunt
+				obcaecati mollitia pariatur amet odit! Consequatur odio quaerat explicabo quis facilis assumenda illum
+				ipsa voluptas excepturi.</p>
+			<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque, sequi facilis laudantium nesciunt
+				obcaecati mollitia pariatur amet odit! Consequatur odio quaerat explicabo quis facilis assumenda illum
+				ipsa voluptas excepturi.</p>
+			<section>
+				<h2 class="sectionHeader1">Refactoring - poprawianie kodu</h2>
+			</section>
+			<section>
+				<h2 class="sectionHeader1">CSS II</h2>
+				<header class="smallHeader">
+					Sposoby stylowania:
+				</header>
+				<p class="paragraph">- stylowanie wewnątrzznacznikow (niepolecane)</p>
+				<p class="paragraph">- stylowanie za pomocą id (niepolecane)</p>
+				<p class="paragraph">- stylowanie za pomocą !important - siłowo zmienia, żadna inna funkcja nie ma znaczenia (niepolecane)</p>
+				<p class="paragraph">- za pomocą klas (polecane)</p>
+			</section>
+			<section>
+				<h2 class="sectionHeader1">Specyficzność w CSS</h2>
+				<p class="paragraph"> _ , _ , _ , _ , _ , _</p>
+				<p class="paragraph">!important , style="" , #name (id) , .name (class) , element</p>
+				<p class="paragraph">Ważność specyficzności rośnie od prawej. Jeżeli specyfoczność jest równa - pierszeństwo ma selektor
+					"bliżej" elementu</p>
+				<p class="paragraph"><strong>Należy dodawać klasę do każdego elementu (nawej jeżeli jest to jeden element. Sylujemy przez
+						klasy!</strong></p>
+			</section>
+			<section>
+				<h2 class="sectionHeader1">Nazewnictwo klas</h2>
+				<p class="paragraph">- używaj pojedynczych słów z j. ang.</p>
+				<p class="paragraph">- nazywaj rzeczy zgodnie z ich funkcjami na stronie</p>
+				<p class="paragraph">- startuj z małej liter np. header, nie Header</p>
+				<p class="paragraph">- nie zaczynaj od cyfr</p>
+				<p class="paragraph">- jeśli musisz używać dwóch słów, to używaj tzw. camelCase np. newsListing</p>
+				<p class="paragraph">- staraj się, żeby element miał jedną klasę (nie zwiększaj specyficznośći bez potrzeby</p>
+			</section>
+			<section>
+				<h2 class="sectionHeader1">Jak działa przeglądarka</h2>
+				<p class="paragraph">Przeglądarka korzysta z ptotokołu<strong>HTTP - Hypertext Transer Protocol</strong></p>
+				<p class="paragraph">Jest to protokół do transportowania HTML-a i całej reszty którą widzisz na stronie</p>
+				<p class="paragraph"><strong>HTTPS - Hypertext Tramsfer Protocol Secure</strong> - szyfrowany, bezpieczny (z kłódką)
+					zalecanyy do stosowania protokół</p>
+				<p class="paragraph"><strong>URL - Uniform Resource Locator (ADRES)</strong></p>
+				<br>
+				<header class="smallHeader">Zasada działania</header>
+				<p class="paragraph">1. wpisuję w pasku adresu cotenfrontend.pl [enter]</p>
+				<p class="paragraph">2. przeglądarka szuka serwera cotenfrontend.pl [DNS]. DNS odpowiada za "tłumaczenie" tekstu ludzkiego
+					na tekst zrozumiały dla komputerów (adresy ip)</p>
+				<p class="paragraph">3. po znalezieniu serwera odpytuje go o index (jeśli
+					podamy sam adres serwera) - to co jest indexem
+					zależy od konﬁguracji serwera (nie musi to być
+					index.html, choć w przypadku stron statycznych jest
+					to najczęstszy przypadek)</p>
+				<p class="paragraph">4. serwer wysyła do przeglądarki zawartość html </p>
+				<p class="paragraph">5. przeglądarka wczytuje html i szuka wszystkich
+					dodatkowych zasobów: style, skrypty, obrazki itp. i
+					dla każdego z zasobów wykonuje zapytanie</p>
+				<p class="paragraph">6. Przeglądarka parsuje (sprawdza składnię) i renderuje (zamienia kod na to co widzimy) stronę</p>
+				<br>
+				<p class="paragraph">Komunikacja PRZEGLĄDARKA - SERWER odbywa się na zasadzie REQUEST (zażadaj) - RESPONSE (odpowiedz)</p>
+				<br>
+				<header class="smallHeader">
+					Kody odpowiedzi protokołu HTTP
+				</header>
+				<p  class="paragraph" class="httpCode1">- 200 - OK</p>
+				<p  class="paragraph" class="httpCode2">- 30X - Szukasz w złym miejscu - serwer przekieruje Cię w dobre (bo wie gdzie)</p>
+				<p  class="paragraph" class="httpCode3">- 405 - Nie ma na serwerze tego czego potrzebujesz</p>
+				<p  class="paragraph" class="httpCode4">- 50X - Błędy wewnętrzne serwera</p>
+				<section class="sectionHttpCode">
+					<header>
+						<h3 class="smallHeader">Kody HTTP</h3>
+					</header>
+					<p  class="paragraph" class="httpCode0">- 1XX - hold on</p>
+					<p  class="paragraph" class="httpCode1">- 2XX - here you go</p>
+					<p  class="paragraph" class="httpCode2">- 3XX - go away</p>
+					<p class="paragraph" class="httpCode3">- 4XX - you fucked up</p>
+					<p class="paragraph" class="httpCode4">- 5XX - Ifucked up</p>
+				</section>
+				<section>
+					<header>
+						<h3 class="smallHeader">/ ROOT - jest istotną częścią ścieżek do zasobów</h3>
+					</header>
+					<p class="paragraph">/ - używamy gdy kożystasz z serwera</p>
+					<p class="paragraph">/ - nie używamy gdy kożystasz z dysku (Brak / z przodu drugiej ścieżki uczynił adres do zasobu
+						relatywnym*</p>
+					<br>
+					<header class="smallHeader">
+						Podsumowanie
+					</header>
+					<p class="paragraph">- protokół który obsługuje strony internetowe i ich zawartość to HTTP (aktualnie coraz częściej
+						HTTP/2)</p>
+					<p class="paragraph">- komunikacja przeglądarka - serwer odbywa się na zasadach request - response</p>
+					<p class="paragraph">- odpowiedzi serwera mają różne kody (i pozwala nam to na diagnozowanie problemów)</p>
+					<p class="paragraph">- root (/) jest istotną częścią ścieżek do zasobów (i dobrze wiedzieć jak działa :)) </p>
+				</section>
+			</section>
+			<section>
+				<h2 class="sectionHeader1">JavaScript</h2>
+				<p class="paragraph" class="js">JavaScript != Java <br> (!= - nie równa się)</p>
+				<p class="paragraph">Rozszerzenie - .js</p>
+				<br>
+				<header class="smallHeader">
+					ECMA Script 20015 (ES6)
+				</header>
+				<p class="paragraph">- ECMAScript jest to ustandaryzowany przez organizację ECMA skryptowy język programowania</p>
+				<p class="paragraph">- JavaScript implementuje rzeczy ze specyﬁkacji ECMAScript</p>
+				<p class="paragraph">- Rozwój ECMAScript mocno przyspieszył przez szerokie wykorzystywanie JavaScriptu</p>
+				<p class="paragraph">- ES6 (i nowsze) wprowadzają wiele udogodnień dla developerów</p>
+				<p class="paragraph">- Nowe feature'y (funkcje) mogą być niewspierane we wszystkich przeglądarkach (ale są na to sposoby)</p>
+				<p class="paragraph">- Strona caniuse.com - sprawdzanie co z ES6 działa na jakiej przeglądarce</p>
+				<br>
+
+				<header class="smallHeader">
+					Tworzymy plik .js (tak jak przy CSS<br>
+					Na końcu HTML-a wpisujemy (script src = " nazwa . js ") ( script )
+				</header>
+				<br>
+
+				<header class="smallHeader">
+					Zmienn - pudełko na różne rzeczy LET vs CONST VS VAR (stare)
+				</header>
+				<p class="paragraph">Do zmiennej w JS możemy przypisywać wszystko</p>
+				<p class="paragraph">// const - rzeczy mające stałą strukturę - nie można ich podmieniać<br>
+					const name = 'Maciek';<br>
+					const age = 31;</p>
+				<p class="paragraph">// let - rzeczy, które możemy przypisywać wielokrotnie, ale deﬁniujemy tylko raz!
+					let isHappy = false;<br>
+					isHappy = true;<br>
+					isHappy = 'tak';</p>
+
+				<header class="smallHeader">
+					Kolejność wczytywania stron prze przeglądarkę
+				</header>
+				<p class="paragraph">1. HRML</p>
+				<p class="paragraph">2. CSS</p>
+				<p class="paragraph">3. JS</p>
+
+				<header class="smallHeader">
+					Prawie wszystko w JS jest obiektem*
+				</header>
+				<p class="paragraph">*bo nawet typy proste, mimo iż nie są obiektem - to się tak zachowują</p>
+
+				<header class="smallHeader">
+					Typy proste w JS (primitives)
+				</header>
+				<p class="paragraph"><strong>String </strong> - tekst, otaczamy ' lub " (zalecam ') - ciąg znaków </p>
+				<p class="paragraph"><strong>Number </strong> - liczba </p>
+				<p class="paragraph"><strong>Bigint </strong> - duża liczba ;) większa niż 2 53 </p>
+				<p class="paragraph"><strong>boolean </strong> - true lub false </p>
+				<p class="paragraph"><strong>null </strong> - wartość celowo niezdeﬁniowana </p>
+				<p class="paragraph"><strong>undeﬁned </strong> - brak deﬁnicji </p>
+				<p class="paragraph"><strong>*symbol </strong> - tworzy "unikalne opakowanie" </p>
+
+				<header class="smallHeader">
+					Podsumowanie
+				</header>
+				<p class="paragraph">- Kod JS uruchamia się raz (po załadowaniu strony) </p>
+				<p class="paragraph">- Java to nie JavaScript </p>
+				<p class="paragraph">- JavaScript implementuje rzeczy ze specyﬁkacji ECMAScript </p>
+				<p class="paragraph">- JavaScript to frontendowe programowanie </p>
+				<p class="paragraph">- Za pomocą JS można robić różne szalone rzeczy (a ja jestem ekspertem od szalonych rzeczy 😎 ) </p>
+
+				<header class="smallHeader">
+					Funkcje w JS
+				</header>
+				<p class="paragraph">` - Backtick / backquote - wykorzystywany do literalów<br>
+					<strong>console.log(`Nazywam się ${name} i mam ${age} lat`);</strong></p>
+				<p class="paragraph">- alert ('text'); - powiadomienie przed towarciem strony <strong>STRING</strong> - ciąg znaków
+					('text' )</p>
+			</section>
+			<section>
+				<header>
+					<h2 class="sectionHeader1">Terminal</h2>
+				</header>
+				<p class="paragraph"><strong>Uruchomienie Terminala</strong>: start ; piszemy cmd ; enter</p>
+				<p class="paragraph" class="smallHeader">Skróty używane w Terminalu:</p>
+				<p class="terminal">- cd C:\</p>
+				<p class="paragraph" class="terminalText">przejście do głównego katalogu na dysku C</p>
+				<p class="terminal">- dir</p>
+				<p class="paragraph" class="terminalText"> wypisanie zawartości katalogu</p>
+				<p class="terminal">- cd ..</p>
+				<p class="paragraph" class="terminalText"> przejście do katalogu wyżej</p>
+				<p class="terminal">- cd nazwa-katalogu </p>
+				<p class="paragraph" class="terminalText"> przejście do katalogu o nazwie nazwa-katalogu</p>
+				<p class="terminal">- code . </p>
+				<p class="paragraph" class="terminalText"> uruchomienie visual studio code w aktualnym katalogu</p>
+				<p class="terminal">- cd </p>
+				<p class="paragraph" class="terminalText"> wyświetlenie aktualnej ścieżki </p>
+				<p class="terminal">- mkdir nazwa-katalogu </p>
+				<p class="paragraph" class="terminalText"> stworzenie katalogu o nazwie nazwa-katalogu </p>
+			</section>
+		</article>
+
+		<footer class="img">
+			<img src="korsan-header.jpg" alt="Zdjęcie autora Lorem Ipsum">
+			<br>
+			Autoerm jest : Lorem Impsum
+		</footer>
+	</main>
+	<footer class="footer">
+		<p class="paragraph">Wróć do <a href="#up">góry</a></p>
+	</footer>
+</body>
+
+</html>
