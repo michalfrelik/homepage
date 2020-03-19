@@ -4,13 +4,14 @@ body {
 
 .navigation {
     color: black;
-    font-size: 12px;
+    font-size: 16px;
     background: #d7e6ec;
+    word-spacing: 20px;
 }
 
 .footer {
     color: black;
-    font-size: 12px;
+    font-size: 16px;
     background: #d7e6ec;
 }
 
