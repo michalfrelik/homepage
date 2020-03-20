@@ -1,41 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
 </head>
+
 <body>
-    <header class="navigation">
-        <a href="index.html">Strona_główna</a>
-        <a href="weekIII.html">Poprzedni_tydzień</a>
-    </header>
-    <main>
-        <article>
-            <header class="mainHeader" id="up">
-                <h1 class="h1">Tydzień IV</h1>
-            </header>
+  <header class="navigation">
+    <a href="index.html">Strona_główna</a>
+    <a href="weekIII.html">Poprzedni_tydzień</a>
+  </header>
+  <main>
+    <article>
+      <header class="mainHeader" id="up">
+        <h1 class="h1">Tydzień IV</h1>
+      </header>
 
-            <h2 class="sectionHeader1">GIT</h2>
-            <header class="smallHeader">
-                Konfiguracja
-            </header>
-            <p class="paragraph">
-                1.Uruchamiamy Terminal.<br>
-                2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
-                3.Wpisujemy <strong>git config --global user.email</strong><br>
-                4.Sprawdzenie <em>git config --get user.name / user.email</em>
-            </p>
-            <header class="smallHeader">
-                CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania 
-            </header>
-        </article>
+      <h2 class="sectionHeader1">GIT</h2>
+      <header class="smallHeader">
+        Konfiguracja
+      </header>
+      <p class="paragraph">
+        1.Uruchamiamy Terminal.<br>
+        2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
+        3.Wpisujemy <strong>git config --global user.email</strong><br>
+        4.Sprawdzenie <em>git config --get user.name / user.email</em>
+      </p>
+      <header class="smallHeader">
+        CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
+      </header><br>
+      <header class="smallHeader">
+        Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
+      </header><br>
+      <header class="smallHeader">
+        Konfiguracja projektu (REPORYTORIUM = PROJEKT)
+      </header>
+      <p class="paragraph"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w projekcie<br>
+        1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
+        2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog <strong>.git</strong>-
+        przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
+      </p>
+      <header class="smallHeader">
+        Komendy:
+      </header>
+      <p class="paragraph">
+        <strong>- git status</strong>- wyświetla status git-a<br>
+        <strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
+        <strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
+        <strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
+        <strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
+        <strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
+      </p>
+      <header class="smallHeader">
+        Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
+      </header>
+      <p class="paragraph">
+        <strong>Jak często commitować?</strong><br>
+        Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej niż rzadziej
+      </p>
+      <header class="smallHeader">
+        git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
+      </header><br>
+      <header class="smallHeader">
+        GitHub != Git
+      </header>
+      <p class="paragraph"><strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a lokalnego na
+        serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod (programistyczna
+        wizytówka)</p>
+      <header class="smallHeader">
+        GIT Podsumowanie:
+      </header>
+      <p class="paragraph">
+        - GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
+        - Działa lokalnie<br>
+        - Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
+        - Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
+        - Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa (prawdziwe dane, dużo projektów, cużo commitów)<br>
+        - Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
+        - Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push 
+      </p>
+    </article>
 
-    </main>
+  </main>
 
-    <footer class="footer">
-        Wróć do <a href="#up">góry</a>
-    </footer>
+  <footer class="footer">
+    Wróć do <a href="#up">góry</a>
+  </footer>
 </body>
+
 </html>
