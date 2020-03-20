@@ -1,43 +1,15 @@
 body {
-    background: salmon;
+    background: #ffffff;
 }
 
 .navigation {
     color: black;
     font-size: 16px;
-    background: #d7e6ec;
     word-spacing: 20px;
 }
 
-.footer {
-    color: black;
-    font-size: 16px;
-    background: #d7e6ec;
-}
-
-.mainHeader {
-    color: tomato;
-    font-size: 32px;
-    background: #2d2241;
-}
-
-.sectionHeader0 {
-    color: #0e739b;
-    background: pink;
-}
-
-.sectionHeader1 {
-    color: #5a0c0c;
-    font-size: 30px;
-}
-
-.smallHeader {
-    font-size: 20px;
-    font-weight: 800;
-}
-
 .img {
-    color: #5a0c0c;
+    color: #00487c;
 }
 
 .httpCode0 {
@@ -62,20 +34,28 @@ body {
 
 .sectionHttpCode {
     font-size: 16px;
-    background: #47dac6;
+    background: #5DA9E9;
 }
 
-.js {
-    font-size: 20px;
-    color: red;
-}
+
 
 .h1 {
     text-transform: uppercase;
-    margin: 0;
-    padding: 0;
-    font-size: 4rem;
-    color: #f9c802;
+    margin: 35px;
+    font-size: 48px;
+    color: #00487c;
+}
+
+.h2 {
+    color: black;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.h3 {
+    color: #00487c;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .terminal {
@@ -83,10 +63,13 @@ body {
     background: black;
 }
 
-.terminalText {
-    margin-left: 30px;
+.paragraph {
+    color: black;
+    font-size: 18px;
 }
 
-.paragraph {
-    color: darkblue;
+.attention {
+    font-size: 20px;
+    color: red;
+    font-weight: 800;
 }
