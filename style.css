@@ -41,17 +41,25 @@ body {
 
 .h1 {
     text-transform: uppercase;
-    margin: 35px;
     font-size: 48px;
     color: #00487c;
+    padding:15px 0 5px 20px;
+    background: #1a936f;
+    border: 3px solid #00487c;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 400px;
+    margin:10px auto;
 }
 
 .h2 {
     color: black;
     font-size: 30px;
-    margin: 25px;
+    padding:5px 0 5px 20px;
+    border: 3px solid #00487c;
+    width:100%;
+    margin: 0 auto;
 }
-
 .h3 {
     color: #00487c;
     font-size: 20px;
@@ -66,10 +74,25 @@ body {
 .paragraph {
     color: black;
     font-size: 18px;
+    padding:0 0 0 30px;
 }
 
 .attention {
     font-size: 20px;
     color: red;
     font-weight: 800;
+}
+
+.lorem {
+    width : 100%;
+    max-width: 30vw;
+    max-height: 400px;
+    overflow: scroll;
+    margin: 0 auto;
+}
+
+.main{
+    width:100%;
+    max-width: 800px;
+    margin: 32px auto;
 }
