@@ -16,85 +16,126 @@
   <main class="main">
     <article>
       <section>
-      <header id="up">
-        <h1 class="h1">
-          Tydzień IV
-        </h1>
-      </header>
-      <section>
-      <h2 Class="h2">GIT</h2>
-      <h3 Class="h3">
-        Konfiguracja
-      </h3>
-      <p class="paragraph">
-        1.Uruchamiamy Terminal.<br>
-        2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
-        3.Wpisujemy <strong>git config --global user.email</strong><br>
-        4.Sprawdzenie <em>git config --get user.name / user.email</em>
-      </p>
-      <h3 Class="h3">
-        CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
-      </h3><br>
-      <h3 Class="h3">
-        Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
-      </h3><br>
-      <h3 Class="h3">
-        Konfiguracja projektu (REPORYTORIUM = PROJEKT)
-      </h3>
-      <p class="paragraph"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w projekcie<br>
-        1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
-        2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog <strong>.git</strong>-
-        przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
-      </p>
-      <h3 Class="h3">
-        Komendy:
-      </h3>
-      <p class="paragraph">
-        <strong>- git status</strong>- wyświetla status git-a<br>
-        <strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
-        <strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
-        <strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
-        <strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
-        <strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
-      </p>
-      <h3 Class="h3">
-        Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
-      </h3>
-      <p class="paragraph">
-        <strong>Jak często commitować?</strong><br>
-        Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej niż rzadziej
-      </p>
-      <h3 Class="h3">
-        git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
-      </h3><br>
-      <header class="attention">
-        GitHub != Git
-      </header>
-      <p class="paragraph"><strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a lokalnego na
-        serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod (programistyczna
-        wizytówka)</p>
-      <h3 Class="h3">
-        GIT Podsumowanie:
-      </h3>
-      <p class="paragraph">
-        - GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
-        - Działa lokalnie<br>
-        - Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
-        - Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
-        - Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa (prawdziwe dane,
-        dużo projektów, cużo commitów)<br>
-        - Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
-        - Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push
-      </p>
-    </section>
-    <seciont>
-      <h2 class="h2">Upiększanie</h2>
-      <p class="paragraph">Przydatna strona - colors.co (colors genarator)</p>
-      <p class="paragraph"><strong>ctrl + f (funkca replace)</strong>- znajduje wszystkie ciągi znaków i pozwala na zastąpienie ich na raz,nowym ciągiem znaków</p>
-      <p class="paragraph">To samo sylowanie 2 (lub więcej klas) - po przecinku np. .class1 , .class2 { ...}</p>
-    </seciont>
-    <section>
-    </section>
+        <header id="up">
+          <h1 class="h1">
+            Tydzień IV
+          </h1>
+        </header>
+        <section>
+          <h2 Class="h2">GIT</h2>
+          <h3 Class="h3">
+            Konfiguracja
+          </h3>
+          <p class="paragraph">
+            1.Uruchamiamy Terminal.<br>
+            2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
+            3.Wpisujemy <strong>git config --global user.email</strong><br>
+            4.Sprawdzenie <em>git config --get user.name / user.email</em>
+          </p>
+          <h3 Class="h3">
+            CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
+          </h3><br>
+          <h3 Class="h3">
+            Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
+          </h3><br>
+          <h3 Class="h3">
+            Konfiguracja projektu (REPORYTORIUM = PROJEKT)
+          </h3>
+          <p class="paragraph"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w
+            projekcie<br>
+            1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
+            2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog
+            <strong>.git</strong>-
+            przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
+          </p>
+          <h3 Class="h3">
+            Komendy:
+          </h3>
+          <p class="paragraph">
+            <strong>- git status</strong>- wyświetla status git-a<br>
+            <strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
+            <strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
+            <strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
+            <strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
+            <strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
+          </p>
+          <h3 Class="h3">
+            Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
+          </h3>
+          <p class="paragraph">
+            <strong>Jak często commitować?</strong><br>
+            Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej niż
+            rzadziej
+          </p>
+          <h3 Class="h3">
+            git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
+          </h3><br>
+          <header class="attention">
+            GitHub != Git
+          </header>
+          <p class="paragraph"><strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a lokalnego na
+            serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod
+            (programistyczna
+            wizytówka)</p>
+          <h3 Class="h3">
+            GIT Podsumowanie:
+          </h3>
+          <p class="paragraph">
+            - GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
+            - Działa lokalnie<br>
+            - Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
+            - Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
+            - Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa (prawdziwe dane,
+            dużo projektów, cużo commitów)<br>
+            - Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
+            - Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push
+          </p>
+        </section>
+        <seciont>
+          <h2 class="h2">Upiększanie</h2>
+          <p class="paragraph">Przydatna strona - colors.co (colors genarator)</p>
+          <p class="paragraph"><strong>ctrl + f (funkca replace)</strong>- znajduje wszystkie ciągi znaków i pozwala na
+            zastąpienie ich na raz,nowym ciągiem znaków</p>
+          <p class="paragraph">To samo sylowanie 2 (lub więcej klas) - po przecinku np. .class1 , .class2 { ...}</p>
+        </seciont>
+        <section>
+          <h2 class="h2">Życie w pudełu I</h2>
+          <p class="paragraph">Świat stron internetowych jest płaski (prawie płaski)</p>
+          <p class="paragraph"><strong>display: block</strong>- blokiem jest paragraf, sekcja, main itp. Pragraf
+            przyjmuje maksymalną szerokość bloku w którym się znajduje (np. praragraf przyjmuje szerokość sekcji w
+            której się znajduje). Wyświetla się na całą szerokość "rodzica"<br>
+            <strong>display: inline</strong>- nie rozpycha się jak display: block, nie przenosi tekstu do nowej linii,
+            zajmuje dokładnie tyle ile dany tekst np. strong, b, en, i<br>
+            <strong>display: inline-block</strong>
+          </p>
+          <p class="paragraph">
+            <strong>BOX MODEL</strong><br>
+            Wszystkie elementy wrzucone na stronę otoczone są "niewidzialnym prostokątem"
+          </p>
+          <img class="img" src="BoxModel.JPG" alt="Box Model">
+          <p class="paragraph">
+            <strong>margin</strong>- margines<br>
+            <strong>border</strong>- obramowanie<br>
+            <strong>padding</strong>- wewnętrzny margines<br>
+            <strong>element</strong>
+          </p>
+          <p class="paragraph">
+            padding-top: 3px;<br>
+            padding-right: 4 px;<br>
+            padding-bottom: 5 px;<br>
+            padding-left: 6px;<br>
+            <strong>Można to zapisać:</strong> padding: 3px 4px 5px 6px;
+          </p>
+          <p class="paragraph">
+            padding: 3px 4px 3px 4px;<br>
+            <strong>Można to zapisać:</strong> padding: 3px 4px; (wartości lustrzane)
+          </p>
+          <p class="paragraph">
+            padding: 3px 3px 3px 3px;<br>
+            <strong>Można to zapisać:</strong> padding: 3px;
+        </section>
+        <section>
+        </section>
     </article>
 
   </main>
