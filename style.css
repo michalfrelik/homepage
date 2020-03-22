@@ -64,6 +64,7 @@ body {
     color: #00487c;
     font-size: 20px;
     font-weight: 800;
+    margin: 5px;
 }
 
 .terminal {
@@ -85,7 +86,7 @@ body {
 
 .lorem {
     width : 100%;
-    max-width: 30vw;
+    max-width: 80vw;
     max-height: 400px;
     overflow: scroll;
     margin: 0 auto;
