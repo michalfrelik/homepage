@@ -8,15 +8,20 @@
   <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="up">
   <header class="navigation">
+<<<<<<< HEAD
     <a href="index.html">Strona główna</a>&nbsp&nbsp&nbsp
     <a href="weekIII.html">Poprzedni tydzień</a>
+=======
+    <a class="link" href="index.html">Strona główna</a>&nbsp&nbsp&nbsp
+    <a class="link" href="weekIII.html">Poprzedni tydzień</a>
+>>>>>>> 83f7328c28d726c09a7a948d26c86802102bbb14
   </header>
   <main class="main">
     <article>
       <section>
-        <header id="up">
+        <header>
           <h1 class="h1">
             Tydzień IV
           </h1>
@@ -147,23 +152,29 @@
           <p class="paragraph">
             margin: 10px auto; - środkowanie treści (margines górny i dolny - 10 px, boczne marginesy wyśrodkowane)
           </p>
-          <h3 class="h3">Jednostki</h3>
-          <p class="paragraph">
-            - 0 - może być bez jednostek<br>
-            - px - piksele<br>
-            - % - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)<br>
-            - vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od szerokośći strony (niepolecane)<br>
-            - vh = viewport hight
-          </p>
+          <section class="section">
+            <h3 class="h3">Jednostki</h3>
+            <div class="box">Co ten frontend</div>
+            <div class="boxTest0">Co ten frontend</div>
+            <div class="boxTest1">Test</div>
+            <p class="paragraph">
+              - 0 - może być bez jednostek<br>
+              - px - piksele<br>
+              - % - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)<br>
+              - vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być
+              stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od szerokośći
+              strony (niepolecane)<br>
+              - vh = viewport hight
+            </p>
+          </section>
         </section>
         <section>
         </section>
     </article>
 
   </main>
-
-  <footer class="navigation">
-    <a href="#up">Wróć_do_góry</a>
+  <footer class="footer">
+    <a class="link" class="link" href="#up">Wróc do góry</a>
   </footer>
 </body>
 
