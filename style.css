@@ -89,6 +89,8 @@ body {
 .terminal {
     color: white;
     background: black;
+    width: 160px;
+    margin: 0;
 }
 
 .paragraph {
