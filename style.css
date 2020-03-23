@@ -2,9 +2,14 @@ body {
     background: #fff;
 }
 
+.main{
+    width:100%;
+    max-width: 800px;
+    margin: 32px auto;
+    padding-top: 50px;
+}
+
 .navigation {
-    text-decoration: none;
-    color: green;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +17,7 @@ body {
     height: 20px;
     width: 100%;
     background: #fff;
-    position: relative'
+
 }
 
 .footer {
@@ -25,25 +30,6 @@ body {
     color: #1a936f;
     text-decoration: none;
 }
-
-.divHomePage, .divPreviousPage, .divNextPage {
-    width: 100px;
-    height: 20px;
-    border: 2px solid red;
-    background: yellowgreen;
-    position: absolute;
-}
-
-.divPreviousPage {
-    width: 120px;
-    left: 265px;
-}
-
-.divNextPage {
-    width: 120px;
-    left: 130px;
-}
-
 
 .img {
     color: #00487c;
@@ -126,13 +112,6 @@ body {
     max-height: 400px;
     overflow: scroll;
     margin: 0 auto;
-}
-
-.main{
-    width:100%;
-    max-width: 800px;
-    margin: 32px auto;
-    padding-top: 50px;
 }
 
 .section {
