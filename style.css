@@ -5,19 +5,29 @@ body {
 .main{
     width:100%;
     max-width: 800px;
-    margin: 32px auto;
+    margin: 0 auto;
     padding-top: 50px;
 }
 
-.main{
-    width:100%;
-    max-width: 800px;
-    margin: 32px auto;
+.navigation {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 16px;
+    background: #fff;
 }
 
-.navigation {
-    color: black;
-    font-size: 16px;
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.link {
+    text-decoration: none;
+    color: #1a936f
 }
 
 .img {
@@ -112,3 +122,39 @@ body {
     overflow: scroll;
     margin: 0 auto;
 }
+
+.box, .boxTest, .boxTest1{
+    width: 100px;
+    height: 100px;
+    background: yellowgreen;
+    padding: 10px;
+    border: 10px solid red;
+    box-sizing: border-box;
+    position: absolute;
+    top: 10px;
+    right: 50%;
+}
+
+.box {
+    z-index: 2;
+    position: absolute;
+}
+
+.boxTest {
+    top: 30px;
+    right: 55%;
+    background: blueviolet;
+}
+
+.boxTest1 {
+    top: 10px;
+    right: 5%;
+    background: blueviolet;
+    position: sticky;
+}
+
+.sectionBox {
+    position: relative;
+
+}
+
