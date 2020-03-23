@@ -1,5 +1,12 @@
 body {
-    background: #ffffff;
+    background: #fff;
+}
+
+.main{
+    width:100%;
+    max-width: 800px;
+    margin: 32px auto;
+    padding-top: 50px;
 }
 
 .main{
