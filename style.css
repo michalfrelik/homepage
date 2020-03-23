@@ -41,6 +41,8 @@ body {
     border: 2px solid #00487c;
     max-width: 200px;
     width: 100%;
+    float: left;
+    margin: 16px 16px 16px 0;
 }
 
 .httpCode0 {
@@ -144,11 +146,13 @@ body {
     top: 90px;
     right: 5%;
     background: blueviolet;
+    z-index: 3;
 }
 
 
 .sectionBox {
     position: relative;
+    overflow: hidden;
 
 }
 
