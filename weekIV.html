@@ -167,12 +167,41 @@
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
             <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
           </section>
-        </section>
-        <section>
+          <seciotn>
+              <p class="paragraph"><strong>div</strong> - nie ma znaczenia semantycznego, używamy go dgy chcemy coś "opakować", tylko gdy nie istnieje semantyczny znacznik</p>
+              <p class="paragraph"><strong>box-sizing</strong><br>
+                - content box<br>
+                - border box - zachowuje wymiary boxa jaki zdefiniowaliśmy, możemy zmieniać padding i border a zawsze zostanie zachowany wymiar (element się zmniejszy.zwiększy)
+              </p>
+              <p class="paragraph"><strong>position:</strong><br>
+                - static - domyślne<br>
+                - relative - "mapa" dla elementów z innymi własnościami (odniesienie)<br>
+                - absolute - przykleje box do sekcji/paragrafu itp. z komendą position: relative (przenosi box nad tekst)<br>
+                - fixed - box podąża za przesuwaniem strony<br>
+                - sticky - zjeżdżając stroną nasz box przyklei się do krawędzi przeglądarki, wracając zostanie na swoim miejscu (nie jest wspierane przez wszystkie przeglądarki - sprawdzenie na stronie ze slajdów)
+              </p>
+              <p class="paragraph"><strong>top, right, bottom, left</strong> - pozycjonowanie boxa (mogą być wartości ujemne)</p>
+              <p class="paragraph"><strong>z-index</strong> - box z większym z-indexem będzie wyświetlany wyżej (makszymalnie 9999)</p>
+              <p class="paragraph"><strong>text-decoration: none</strong> - kasuje podkreślenia w linkach</p>
+              <p class="paragraph"><strong>float</strong> - tekst opływa box/obrazek</p>
+              <p class="paragraph"><strong>overflow: hidden</strong> - jeżeli obrazek będzie większy niż sekcja/paragraf/itp to następna sekcja zacznie się nieżej (nie będzie opływała obrazka z sekcji wyższej - bez tego może)</p>
+              <p class="paragraph"><strong>clear: right/left/both</strong> - ta sama funkcja co overflow: hidden</p>
+              <p class="attention">
+                &nbsp&nbspFloat nie służy do budowania layoutów !<br>
+                Zastępują je flexboxy
+              </p>
+              <section>
+                <h3 class="h3">Podsumowanie:</h3>
+                <p class="paragraph">
+                  - świat stron internetowych jest 2,5 wymiarowy (warstwy/boxy mogą na siebie nachodzić)<br>
+                  - każdy element jest zamknięty w "pudełku", które ma swoje rozmiary<br>
+                  - CSS posiada różne jednostki (stosujemy wg przeznaczenia, upodobania)<br>
+                  - nie używamy floatów do budowania layoutów
+                </p>
+              </section>
+            </seciotn>
+
         </section>
     </article>
 
