@@ -12,12 +12,10 @@ console.log(homepage__header);
 const paragraphs = document.querySelectorAll('p');
 
 console.log(paragraphs);
-console.log(paragraphs[1].innerHTML);
-
 
 const h1 = document.querySelector('h1');
 
 console.log(h1.innerHTML);
 
-h1.innerHTML = `<strong>Nazywam</strong> się ${name} i mam ${age}  lat`;
+h1.innerHTML = `TEST JS`;
 

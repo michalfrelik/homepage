@@ -2,242 +2,261 @@
 <html lang="pl">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="up">
-  <header class="navigation">
-    <a class="navigation__link" href="index.html">Strona główna</a>&nbsp&nbsp&nbsp
-    <a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
-  </header>
-  <main class="main">
-    <article>
-      <section>
-        <header>
-          <h1 class="h1">
-            Tydzień IV
-          </h1>
-        </header>
-        <section>
-          <h2 Class="h2">GIT</h2>
-          <h3 Class="h3">
-            Konfiguracja
-          </h3>
-          <p class="paragraph">
-            1.Uruchamiamy Terminal.<br>
-            2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
-            3.Wpisujemy <strong>git config --global user.email</strong><br>
-            4.Sprawdzenie <em>git config --get user.name / user.email</em>
-          </p>
-          <h3 Class="h3">
-            CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
-          </h3><br>
-          <h3 Class="h3">
-            Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
-          </h3><br>
-          <h3 Class="h3">
-            Konfiguracja projektu (REPORYTORIUM = PROJEKT)
-          </h3>
-          <p class="paragraph"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w
-            projekcie<br>
-            1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
-            2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog
-            <strong>.git</strong>-
-            przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
-          </p>
-          <h3 Class="h3">
-            Komendy:
-          </h3>
-          <p class="paragraph">
-            <strong>- git status</strong>- wyświetla status git-a<br>
-            <strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
-            <strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
-            <strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
-            <strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
-            <strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
-          </p>
-          <h3 Class="h3">
-            Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
-          </h3>
-          <p class="paragraph">
-            <strong>Jak często commitować?</strong><br>
-            Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej niż
-            rzadziej
-          </p>
-          <h3 Class="h3">
-            git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
-          </h3><br>
-          <header class="attention">
-            GitHub != Git
-          </header>
-          <p class="paragraph"><strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a lokalnego na
-            serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod
-            (programistyczna
-            wizytówka)</p>
-          <h3 Class="h3">
-            GIT Podsumowanie:
-          </h3>
-          <p class="paragraph">
-            - GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
-            - Działa lokalnie<br>
-            - Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
-            - Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
-            - Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa (prawdziwe dane,
-            dużo projektów, cużo commitów)<br>
-            - Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
-            - Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push
-          </p>
-        </section>
-        <seciont>
-          <h2 class="h2">Upiększanie</h2>
-          <p class="paragraph">Przydatna strona - colors.co (colors genarator)</p>
-          <p class="paragraph"><strong>ctrl + f (funkca replace)</strong>- znajduje wszystkie ciągi znaków i pozwala na
-            zastąpienie ich na raz,nowym ciągiem znaków</p>
-          <p class="paragraph">To samo sylowanie 2 (lub więcej klas) - po przecinku np. .class1 , .class2 { ...}</p>
-        </seciont>
-        <section>
-          <h2 class="h2">Życie w pudełu I</h2>
-          <h3 class="h3">BOX MODEL</h3>
-          <p class="paragraph">Świat stron internetowych jest płaski (prawie płaski)</p>
-          <p class="paragraph"><strong>display: block</strong>- blokiem jest paragraf, sekcja, main itp. Pragraf
-            przyjmuje maksymalną szerokość bloku w którym się znajduje (np. praragraf przyjmuje szerokość sekcji w
-            której się znajduje). Wyświetla się na całą szerokość "rodzica"<br>
-            <strong>display: inline</strong>- nie rozpycha się jak display: block, nie przenosi tekstu do nowej linii,
-            zajmuje dokładnie tyle ile dany tekst np. strong, b, en, i<br>
-            <strong>display: inline-block</strong>
-          </p>
-          <p class="paragraph">
-            <strong>BOX MODEL</strong><br>
-            Wszystkie elementy wrzucone na stronę otoczone są "niewidzialnym prostokątem"
-          </p>
-          <img class="img" src="BoxModel.JPG" alt="Box Model">
-          <p class="paragraph">
-            <strong>margin</strong>- margines<br>
-            <strong>border</strong>- obramowanie<br>
-            <strong>padding</strong>- wewnętrzny margines<br>
-            <strong>element</strong>
-          </p>
-          <p class="paragraph">
-            padding-top: 3px;<br>
-            padding-right: 4 px;<br>
-            padding-bottom: 5 px;<br>
-            padding-left: 6px;<br>
-            <strong>Można to zapisać:</strong> padding: 3px 4px 5px 6px;
-          </p>
-          <p class="paragraph">
-            padding: 3px 4px 3px 4px;<br>
-            <strong>Można to zapisać:</strong> padding: 3px 4px; (wartości lustrzane)
-          </p>
-          <p class="paragraph">
-            padding: 3px 3px 3px 3px;<br>
-            <strong>Można to zapisać:</strong> padding: 3px;
-          </p>
-          <p class="paragraph">
-            border-width: 3px; (szerokość)
-            border-style: solid; (styl)
-            boredr-color: #...; (kolor)<br>
-            <strong>Można to zapisać:</strong> border: 3px solid #...
-          </p>
-          <p class="paragraph">
-            border-radious - zaokrąglenie rogów np. px, %(kwadratowy element + border-radious: 50% = okrągły element)
-          </p>
-          <p class="paragraph">
-            margin: 10px auto; - środkowanie treści (margines górny i dolny - 10 px, boczne marginesy wyśrodkowane)
-          </p>
-          <section class="section">
-            <h3 class="h3">Jednostki</h3>
-            <p class="paragraph">
-              - 0 - może być bez jednostek<br>
-              - px - piksele<br>
-              - % - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)<br>
-              - vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być
-              stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od szerokośći
-              strony (niepolecane)<br>
-              - vh = viewport hight
-            </p>
-          </section>
-          <section class="sectionBox">
-            <h2 class="h2">Życie w pudełku II</h2>
-            <img class="imgKorsan" src="korsan-header.jpg" alt="Korsan"/>
-            <div class="box">Co ten frontend</div>
-            <div class="boxTest">Co ten frontend</div>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-            <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus voluptates. Repellat, totam.</p>
-          </section>
-          <seciotn>
-              <p class="paragraph"><strong>div</strong> - nie ma znaczenia semantycznego, używamy go dgy chcemy coś "opakować", tylko gdy nie istnieje semantyczny znacznik</p>
-              <p class="paragraph"><strong>box-sizing</strong><br>
-                - content box<br>
-                - border box - zachowuje wymiary boxa jaki zdefiniowaliśmy, możemy zmieniać padding i border a zawsze zostanie zachowany wymiar (element się zmniejszy.zwiększy)
-              </p>
-              <p class="paragraph"><strong>position:</strong><br>
-                - static - domyślne<br>
-                - relative - "mapa" dla elementów z innymi własnościami (odniesienie)<br>
-                - absolute - przykleje box do sekcji/paragrafu itp. z komendą position: relative (przenosi box nad tekst)<br>
-                - fixed - box podąża za przesuwaniem strony<br>
-                - sticky - zjeżdżając stroną nasz box przyklei się do krawędzi przeglądarki, wracając zostanie na swoim miejscu (nie jest wspierane przez wszystkie przeglądarki - sprawdzenie na stronie ze slajdów)
-              </p>
-              <p class="paragraph"><strong>top, right, bottom, left</strong> - pozycjonowanie boxa (mogą być wartości ujemne)</p>
-              <p class="paragraph"><strong>z-index</strong> - box z większym z-indexem będzie wyświetlany wyżej (makszymalnie 9999)</p>
-              <p class="paragraph"><strong>text-decoration: none</strong> - kasuje podkreślenia w linkach</p>
-              <p class="paragraph"><strong>float</strong> - tekst opływa box/obrazek</p>
-              <p class="paragraph"><strong>overflow: hidden</strong> - jeżeli obrazek będzie większy niż sekcja/paragraf/itp to następna sekcja zacznie się nieżej (nie będzie opływała obrazka z sekcji wyższej - bez tego może)</p>
-              <p class="paragraph"><strong>clear: right/left/both</strong> - ta sama funkcja co overflow: hidden</p>
-              <p class="attention">
-                &nbsp&nbsp&nbspFloat nie służy do budowania layoutów !<br>
-                Zastępują je flexboxy
-              </p>
-              <section>
-                <h3 class="h3">Podsumowanie:</h3>
-                <p class="paragraph">
-                  - świat stron internetowych jest 2,5 wymiarowy (warstwy/boxy mogą na siebie nachodzić)<br>
-                  - każdy element jest zamknięty w "pudełku", które ma swoje rozmiary<br>
-                  - CSS posiada różne jednostki (stosujemy wg przeznaczenia, upodobania)<br>
-                  - nie używamy floatów do budowania layoutów
-                </p>
-              </section>
-              <section>
-                <h2 class=h2>BEM = Block Element Modifier</h2>
-                <h3 class=h3>Dlaczego powstał BEM></h3>
-                <p class="paragraph">
-                  - świat stylowania doszedł do wsysokiego stopnia skomplikowania (pecyficzność)<br>
-                  - problem z logicznym nazywaniem klas<br>
-                  - brak ujednoliconego sposobu stylowania<br>
-                  - Importanty , nadpisywanie rzeczy<br>
-                  - brak odwzorowania struktury HTML w CSS<br>
-                  - stylowanie kilkoma klasami, powtarzające się nazwy
-                </p>
-                <h3 class="h3">BEM jak na dłoni</h3>
-                <img src="BEM_jak_na_dłoni.JPG" alt="BEM jak na dłoni">
-                <h3 class="h3">BEM - przykład z życia</h3>
-                <img src="BEM_przykład.JPG" alt="BEM - przykład z życia">
-                <p class="paragraph"><strong>Block</strong> - nadrzędny element (dłoń)</p>
-                <p class="paragraph"><strong>Element</strong> - część bloku (nie musi być bezpośrednim dzieckiem, ale zawiera się w dłoni)</p>
-                <p class="paragraph"><strong>Modifier</strong> - modyfikator - jeśli element występuje w kilu wariantach tworzymy dodatkową klasę</p>
-                <p class="attention">block__element--modifier</p>
-                <p class="attention"><strong>BEM jest to sposób pisania</strong></p>
-                <p class="paragraph">W BEM-ie zalecane jes stosowanie małych liter i myślników zamiast spacni (nie camaleCase)</p>
-                <h3 class="h3">Podsumowanie</h3>
-                <p class="paragraph">
-                  - Szukamy elementów na stronie i dzielimy ją na bloki<br>
-                  - Myślimy o elementach składowych. Robimy analizę i selekcję<br>
-                  - Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla niego wartości, nie przepisujemy rzeczy z klasy bazowej)
-                </p>
-              </section>
-            </seciotn>
+	<header class="navigation">
+		<a class="navigation__link" href="index.html">Strona główna</a>&nbsp&nbsp&nbsp
+		<a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
+	</header>
+	<main class="main">
+		<article>
+			<header>
+				<h1 class="h1">
+					Tydzień IV
+				</h1>
+			</header>
+			<section>
+				<h2 Class="h2">GIT</h2>
+				<h3 Class="h3">
+					Konfiguracja
+				</h3>
+				<p class="paragraph">
+					1.Uruchamiamy Terminal.<br>
+					2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
+					3.Wpisujemy <strong>git config --global user.email</strong><br>
+					4.Sprawdzenie <em>git config --get user.name / user.email</em>
+				</p>
+				<h3 Class="h3">
+					CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
+				</h3><br>
+				<h3 Class="h3">
+					Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
+				</h3><br>
+				<h3 Class="h3">
+					Konfiguracja projektu (REPORYTORIUM = PROJEKT)
+				</h3>
+				<p class="paragraph"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w
+					projekcie<br>
+					1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
+					2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog
+					<strong>.git</strong>-
+					przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
+				</p>
+				<h3 Class="h3">
+					Komendy:
+				</h3>
+				<p class="paragraph">
+					<strong>- git status</strong>- wyświetla status git-a<br>
+					<strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
+					<strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
+					<strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
+					<strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
+					<strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
+				</p>
+				<h3 Class="h3">
+					Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
+				</h3>
+				<p class="paragraph">
+					<strong>Jak często commitować?</strong><br>
+					Commitujemy tak często, jak często wprowadzamy zmiany do strony (istotne zmiany). Lepiej częściej niż
+					rzadziej
+				</p>
+				<h3 Class="h3">
+					git lens - rozszerzenie do Visual Studio Code (pozwala na śledzenie zmian)
+				</h3><br>
+				<header class="attention">
+					GitHub != Git
+				</header>
+				<p class="paragraph"><strong>GitHub</strong>- platforma pozwalająca na publikowanie kodu z git-a lokalnego na
+					serwer zewnętrzny (GitHubowski), w taki sposób, że inni użytkownicy są w stanie podejrzeć kod
+					(programistyczna
+					wizytówka)</p>
+				<h3 Class="h3">
+					GIT Podsumowanie:
+				</h3>
+				<p class="paragraph">
+					- GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
+					- Działa lokalnie<br>
+					- Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
+					- Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
+					- Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa (prawdziwe dane,
+					dużo projektów, cużo commitów)<br>
+					- Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
+					- Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push
+				</p>
+			</section>
+			<seciont>
+				<h2 class="h2">Upiększanie</h2>
+				<p class="paragraph">Przydatna strona - colors.co (colors genarator)</p>
+				<p class="paragraph"><strong>ctrl + f (funkca replace)</strong>- znajduje wszystkie ciągi znaków i pozwala na
+					zastąpienie ich na raz,nowym ciągiem znaków</p>
+				<p class="paragraph">To samo sylowanie 2 (lub więcej klas) - po przecinku np. .class1 , .class2 { ...}</p>
+			</seciont>
+			<section>
+				<h2 class="h2">Życie w pudełu I</h2>
+				<h3 class="h3">BOX MODEL</h3>
+				<p class="paragraph">Świat stron internetowych jest płaski (prawie płaski)</p>
+				<p class="paragraph"><strong>display: block</strong>- blokiem jest paragraf, sekcja, main itp. Pragraf
+					przyjmuje maksymalną szerokość bloku w którym się znajduje (np. praragraf przyjmuje szerokość sekcji w
+					której się znajduje). Wyświetla się na całą szerokość "rodzica"<br>
+					<strong>display: inline</strong>- nie rozpycha się jak display: block, nie przenosi tekstu do nowej linii,
+					zajmuje dokładnie tyle ile dany tekst np. strong, b, en, i<br>
+					<strong>display: inline-block</strong>
+				</p>
+				<p class="paragraph">
+					<strong>BOX MODEL</strong><br>
+					Wszystkie elementy wrzucone na stronę otoczone są "niewidzialnym prostokątem"
+				</p>
+				<img class="img" src="BoxModel.JPG" alt="Box Model">
+				<p class="paragraph">
+					<strong>margin</strong>- margines<br>
+					<strong>border</strong>- obramowanie<br>
+					<strong>padding</strong>- wewnętrzny margines<br>
+					<strong>element</strong>
+				</p>
+				<p class="paragraph">
+					padding-top: 3px;<br>
+					padding-right: 4 px;<br>
+					padding-bottom: 5 px;<br>
+					padding-left: 6px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px 4px 5px 6px;
+				</p>
+				<p class="paragraph">
+					padding: 3px 4px 3px 4px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px 4px; (wartości lustrzane)
+				</p>
+				<p class="paragraph">
+					padding: 3px 3px 3px 3px;<br>
+					<strong>Można to zapisać:</strong> padding: 3px;
+				</p>
+				<p class="paragraph">
+					border-width: 3px; (szerokość)
+					border-style: solid; (styl)
+					boredr-color: #...; (kolor)<br>
+					<strong>Można to zapisać:</strong> border: 3px solid #...
+				</p>
+				<p class="paragraph">
+					border-radious - zaokrąglenie rogów np. px, %(kwadratowy element + border-radious: 50% = okrągły element)
+				</p>
+				<p class="paragraph">
+					margin: 10px auto; - środkowanie treści (margines górny i dolny - 10 px, boczne marginesy wyśrodkowane)
+				</p>
+				<section class="section">
+					<h3 class="h3">Jednostki</h3>
+					<p class="paragraph">
+						- 0 - może być bez jednostek<br>
+						- px - piksele<br>
+						- % - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)<br>
+						- vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być
+						stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od szerokośći
+						strony (niepolecane)<br>
+						- vh = viewport hight
+					</p>
+				</section>
+				<section class="sectionBox">
+					<h2 class="h2">Życie w pudełku II</h2>
+					<img class="imgKorsan" src="korsan-header.jpg" alt="Korsan" />
+					<div class="box">Co ten frontend</div>
+					<div class="boxTest">Co ten frontend</div>
+					<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus
+						voluptates. Repellat, totam.</p>
+					<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus
+						voluptates. Repellat, totam.</p>
+					<p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum, et
+						optio dolorum saepe laboriosam corporis nisi incidunt eveniet quidem ab quos eos voluptate possimus
+						voluptates. Repellat, totam.</p>
+				</section>
+				<seciotn>
+					<p class="paragraph"><strong>div</strong> - nie ma znaczenia semantycznego, używamy go dgy chcemy coś
+						"opakować", tylko gdy nie istnieje semantyczny znacznik</p>
+					<p class="paragraph"><strong>box-sizing</strong><br>
+						- content box<br>
+						- border box - zachowuje wymiary boxa jaki zdefiniowaliśmy, możemy zmieniać padding i border a zawsze
+						zostanie zachowany wymiar (element się zmniejszy.zwiększy)
+					</p>
+					<p class="paragraph"><strong>position:</strong><br>
+						- static - domyślne<br>
+						- relative - "mapa" dla elementów z innymi własnościami (odniesienie)<br>
+						- absolute - przykleje box do sekcji/paragrafu itp. z komendą position: relative (przenosi box nad
+						tekst)<br>
+						- fixed - box podąża za przesuwaniem strony<br>
+						- sticky - zjeżdżając stroną nasz box przyklei się do krawędzi przeglądarki, wracając zostanie na swoim
+						miejscu (nie jest wspierane przez wszystkie przeglądarki - sprawdzenie na stronie ze slajdów)
+					</p>
+					<p class="paragraph"><strong>top, right, bottom, left</strong> - pozycjonowanie boxa (mogą być wartości
+						ujemne)</p>
+					<p class="paragraph"><strong>z-index</strong> - box z większym z-indexem będzie wyświetlany wyżej
+						(makszymalnie 9999)</p>
+					<p class="paragraph"><strong>text-decoration: none</strong> - kasuje podkreślenia w linkach</p>
+					<p class="paragraph"><strong>float</strong> - tekst opływa box/obrazek</p>
+					<p class="paragraph"><strong>overflow: hidden</strong> - jeżeli obrazek będzie większy niż sekcja/paragraf/itp
+						to następna sekcja zacznie się nieżej (nie będzie opływała obrazka z sekcji wyższej - bez tego może)</p>
+					<p class="paragraph"><strong>clear: right/left/both</strong> - ta sama funkcja co overflow: hidden</p>
+					<p class="attention">
+						&nbsp&nbsp&nbspFloat nie służy do budowania layoutów !<br>
+						Zastępują je flexboxy
+					</p>
+				</seciotn>
+				<section>
+					<h3 class="h3">Podsumowanie:</h3>
+					<p class="paragraph">
+						- świat stron internetowych jest 2,5 wymiarowy (warstwy/boxy mogą na siebie nachodzić)<br>
+						- każdy element jest zamknięty w "pudełku", które ma swoje rozmiary<br>
+						- CSS posiada różne jednostki (stosujemy wg przeznaczenia, upodobania)<br>
+						- nie używamy floatów do budowania layoutów
+					</p>
+				</section>
+				<section>
+					<h2 class=h2>BEM = Block Element Modifier</h2>
+					<h3 class=h3>Dlaczego powstał BEM></h3>
+					<p class="paragraph">
+						- świat stylowania doszedł do wsysokiego stopnia skomplikowania (pecyficzność)<br>
+						- problem z logicznym nazywaniem klas<br>
+						- brak ujednoliconego sposobu stylowania<br>
+						- Importanty , nadpisywanie rzeczy<br>
+						- brak odwzorowania struktury HTML w CSS<br>
+						- stylowanie kilkoma klasami, powtarzające się nazwy
+					</p>
+					<h3 class="h3">BEM jak na dłoni</h3>
+					<img src="BEM_jak_na_dłoni.JPG" alt="BEM jak na dłoni">
+					<h3 class="h3">BEM - przykład z życia</h3>
+					<img src="BEM_przykład.JPG" alt="BEM - przykład z życia">
+					<p class="paragraph"><strong>Block</strong> - nadrzędny element (dłoń)</p>
+					<p class="paragraph"><strong>Element</strong> - część bloku (nie musi być bezpośrednim dzieckiem, ale zawiera
+						się w dłoni)</p>
+					<p class="paragraph"><strong>Modifier</strong> - modyfikator - jeśli element występuje w kilu wariantach
+						tworzymy dodatkową klasę</p>
+					<p class="attention">block__element--modifier</p>
+					<p class="attention"><strong>BEM jest to sposób pisania</strong></p>
+					<p class="paragraph">W BEM-ie zalecane jes stosowanie małych liter i myślników zamiast spacni (nie camaleCase)
+					</p>
+					<h3 class="h3">Podsumowanie</h3>
+					<p class="paragraph">
+						- Szukamy elementów na stronie i dzielimy ją na bloki<br>
+						- Myślimy o elementach składowych. Robimy analizę i selekcję<br>
+						- Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla niego
+						wartości, nie przepisujemy rzeczy z klasy bazowej)
+					</p>
+				</section>
 
-        </section>
-    </article>
+				</seciotn>
+			</section>
+		</article>
 
-  </main>
-  <footer>
-    <a class="up" class="link" href="#up">Wróc do góry</a>
-    <p class="paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
-  </footer>
+	</main>
+
+	<footer class="footer">
+		<a class="footer__link" href="#up">Wróc do góry</a>
+		<p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+	</footer>
+
 </body>
 
 </html>
