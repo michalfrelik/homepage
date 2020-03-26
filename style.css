@@ -2,8 +2,8 @@ body {
     background: #fff;
 }
 
-.main{
-    width:100%;
+.main {
+    width: 100%;
     max-width: 800px;
     margin: 0 auto;
     padding-top: 50px;
@@ -26,11 +26,11 @@ body {
 }
 
 .footer {
-    bottom:10px;
+    bottom: 10px;
     left: 10px;
 }
 
-.footer__link{
+.footer__link {
     text-decoration: none;
     color: #1a936f;
     position: fixed;
@@ -38,7 +38,7 @@ body {
     right: 10px;
 }
 
-.footer__paragraph{
+.footer__paragraph {
     font-size: 14px;
 }
 
@@ -47,21 +47,22 @@ body {
 }
 
 .homepage__div {
-    padding:10px;
+    padding: 10px;
     border: 3px solid #00487c;
-    margin:10px auto;
+    margin: 10px auto;
     width: 150px;
+    text-align: center;
 }
 
 .homepage__header {
-    padding:0;
+    padding: 0;
     background: #1a936f;
     border: 3px solid #00487c;
     border-radius: 30px;
     width: 100%;
     max-width: 680px;
     height: 100px;
-    margin:10px auto;
+    margin: 10px auto;
     box-sizing: border-box;
 }
 
@@ -80,24 +81,24 @@ body {
 
 .homepage__section {
     border: 3px solid #00487c;
-    width:100%;
+    width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
 }
 
 .article {
-
+    margin: 10px auto;
 }
 
 .article__header {
-    padding:10px;
-    margin:10px auto;
+    padding: 10px;
+    margin: 10px auto;
     width: 400px;
     height: 50px;
     box-sizing: border-box;
 }
 
-.article__title{
+.article__title {
     color: #1a936f;
     font-size: 40px;
     text-align: center;
@@ -106,10 +107,39 @@ body {
     text-transform: uppercase;
 }
 
-.article-paragraph {
+.day {
+    margin: 15px 0;
+}
+
+.day__paragraph {
     color: black;
     font-size: 18px;
-    padding:0 0 0 30px;
+    padding: 0 0 0 30px;
+}
+
+.day__subtitle {
+    color: #00487c;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 20px;
+}
+
+.day__title {
+    color: black;
+    font-size: 30px;
+    padding: 5px 0 5px 20px;
+    border: 3px solid #00487c;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.lorem {
+    width: 100%;
+    max-width: 80vw;
+    max-height: 400px;
+    overflow: scroll;
+    margin: 0 auto;
 }
 
 .img {
@@ -152,32 +182,11 @@ body {
     background: #5DA9E9;
 }
 
-.h2 {
-    color: black;
-    font-size: 30px;
-    padding:5px 0 5px 20px;
-    border: 3px solid #00487c;
-    width:100%;
-    margin: 0 auto;
-}
-.h3 {
-    color: #00487c;
-    font-size: 20px;
-    font-weight: 800;
-    margin: 5px;
-}
-
 .terminal {
     color: white;
     background: black;
     width: 160px;
     margin: 0;
-}
-
-.paragraph {
-    color: black;
-    font-size: 18px;
-    padding:0 0 0 30px;
 }
 
 .attention {
@@ -188,15 +197,7 @@ body {
     margin: 10px auto;
 }
 
-.lorem {
-    width : 100%;
-    max-width: 80vw;
-    max-height: 400px;
-    overflow: scroll;
-    margin: 0 auto;
-}
-
-.box, .boxTest, .boxTest1{
+.box, .boxTest, .boxTest1 {
     width: 100px;
     height: 100px;
     background: yellowgreen;
@@ -220,10 +221,7 @@ body {
     z-index: 3;
 }
 
-
 .sectionBox {
     position: relative;
     overflow: hidden;
-
 }
-
