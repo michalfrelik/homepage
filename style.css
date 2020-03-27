@@ -3,41 +3,41 @@ body {
 }
 
 .main {
-    width: 100%;
-    max-width: 800px;
     margin: 0 auto;
-    padding-top: 50px;
+    max-width: 800px;
     padding-bottom: 50px;
+    padding-top: 50px;
+    width: 100%;
 }
 
 .navigation {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    padding: 16px;
     background: #fff;
+    box-sizing: border-box;
+    left: 0;
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .navigation__link {
-    text-decoration: none;
     color: #1a936f;
+    text-decoration: none;
     margin-right: 20px;
 }
 
 .footer {
     bottom: 10px;
-    left: 10px;
     clear: both;
+    left: 10px;
 }
 
 .footer__link {
-    text-decoration: none;
+    bottom: 10px;
     color: #1a936f;
     position: fixed;
-    bottom: 10px;
     right: 10px;
+    text-decoration: none;
 }
 
 .footer__paragraph {
@@ -49,11 +49,11 @@ body {
 }
 
 .homepage__div {
-    padding: 10px;
     border: 3px solid #00487c;
     margin: 10px auto;
-    width: 150px;
+    padding: 10px;
     text-align: center;
+    width: 150px;
 }
 
 .homepage__header {
@@ -61,31 +61,31 @@ body {
     background: #1a936f;
     border: 3px solid #00487c;
     border-radius: 30px;
-    width: 100%;
-    max-width: 680px;
+    box-sizing: border-box;
     height: 100px;
     margin: 10px auto;
-    box-sizing: border-box;
+    max-width: 680px;
+    width: 100%;
 }
 
 .homepage__header-title {
-    text-transform: uppercase;
-    font-size: 48px;
     color: #00487c;
+    font-size: 48px;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .homepage__link {
-    text-decoration: none;
     color: #1a936f;
     font-size: 30px;
+    text-decoration: none;
 }
 
 .homepage__section {
     border: 3px solid #00487c;
-    width: 100%;
-    margin: 0 auto;
     box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
 }
 
 .article {
@@ -93,19 +93,19 @@ body {
 }
 
 .article__header {
-    padding: 10px;
-    margin: 10px auto;
-    width: 400px;
-    height: 50px;
     box-sizing: border-box;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 400px;
 }
 
 .article__title {
     color: #1a936f;
     font-size: 40px;
-    text-align: center;
-    margin: 0;
     line-height: 25px;
+    margin: 0;
+    text-align: center;
     text-transform: uppercase;
 }
 
@@ -116,6 +116,7 @@ body {
 .day__paragraph {
     color: black;
     font-size: 18px;
+    line-height: 24px;
     padding: 0 0 0 30px;
 }
 
@@ -127,31 +128,31 @@ body {
 }
 
 .day__title {
+    border: 3px solid #00487c;
+    box-sizing: border-box;
     color: black;
     font-size: 30px;
-    padding: 5px 0 5px 20px;
-    border: 3px solid #00487c;
-    width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
+    padding: 5px 0 5px 20px;
+    width: 100%;
 }
 
 .lorem {
-    width: 100%;
+    margin: 15px auto;
     max-width: 80vw;
     max-height: 400px;
     overflow: scroll;
-    margin: 15px auto;
+    width: 100%;
 }
 
 .http-code {
     background: #C1E0F7;
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    box-sizing: border-box;
     border: solid grey 3px;
     border-radius: 30px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 300px;
+    width: 100%;
 }
 
 .http-code__text {
@@ -160,7 +161,7 @@ body {
     font-weight: 800;
     text-align: center;
 }
- 
+
 .http-code__text--color2 {
     color: green;
 }
@@ -178,22 +179,22 @@ body {
 }
 
 .attention {
-    width: 300px;
-    font-size: 20px;
+    border: 3px grey solid;
+    box-sizing: border-box;
     color: red;
+    font-size: 20px;
     font-weight: 800;
     margin: 20px auto;
-    box-sizing: border-box;
     padding: 10px;
-    border: 3px grey solid;
     text-align: center;
+    width: 300px;
 }
 
 .terminal {
-    color: white;
     background: black;
-    width: 160px;
+    color: white;
     margin: 0;
+    width: 160px;
 }
 
 .img-korsan {
@@ -201,18 +202,18 @@ body {
 }
 
 .img-korsan__picture {
-    box-sizing: border-box;
     border: 2px solid #00487c;
-    max-width: 200px;
-    width: 100%;
-    margin: 16px 16px 16px 50px;
-    overflow: hidden;
     border-radius: 50%;
+    box-sizing: border-box;
+    margin: 16px 16px 16px 50px;
+    max-width: 200px;
+    overflow: hidden;
+    width: 100%;
 }
 
 .img-korsan__signature {
-    font-size: 12px;
     color: grey;
+    font-size: 12px;
     margin-left: 70px;
 }
 
@@ -222,17 +223,16 @@ body {
 }
 
 .img-box-model__korsan {
-    box-sizing: border-box;
     border: 2px solid #00487c;
+    box-sizing: border-box;
+    float: left;
+    margin: 15px;
     max-width: 100px;
     width: 100%;
-    margin: 15px;
-    float: left;
 }
 
 .img-bem {
+    margin: 0 auto;
     max-width: 800px;
     width: 100%;
-    margin: 0 auto;
 }
-
