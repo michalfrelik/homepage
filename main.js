@@ -5,17 +5,15 @@ console.log(name);
 console.log(age);
 console.log(`Nazywam się ${name} i mam ${age}  lat`);
 
-const homepage__header = document.querySelector('.homepage__header');
+const day__subtitle = document.querySelectorAll('.day__subtitle');
 
-console.log(homepage__header);
+console.log(day__subtitle);
+console.log(day__subtitle[10]);
 
-const paragraphs = document.querySelectorAll('p');
+const day__title__js= document.querySelector('.day__title--js');
 
-console.log(paragraphs);
+console.log(day__title__js);
 
-const h1 = document.querySelector('h1');
+console.log(day__title__js.innerHTML);
 
-console.log(h1.innerHTML);
-
-h1.innerHTML = `TEST JS`;
-
+day__title__js.innerHTML = 'DOM = Document Object Model - wpisane JS-em'
