@@ -28,6 +28,7 @@ body {
 .footer {
     bottom: 10px;
     left: 10px;
+    clear: both;
 }
 
 .footer__link {
@@ -139,47 +140,52 @@ body {
     max-width: 80vw;
     max-height: 400px;
     overflow: scroll;
+    margin: 15px auto;
+}
+
+.http-code {
+    background: #C1E0F7;
+    width: 100%;
+    max-width: 300px;
     margin: 0 auto;
-}
-
-.img {
-    color: #00487c;
-    margin: 10px auto;
-    width: 100%;
-}
-
-.imgKorsan {
     box-sizing: border-box;
-    border: 2px solid #00487c;
-    max-width: 200px;
-    width: 100%;
-    float: left;
-    margin: 16px 16px 16px 0;
+    border: solid grey 3px;
+    border-radius: 30px;
 }
 
-.httpCode0 {
-    color: darkcyan;
+.http-code__text {
+    color: black;
+    font-size: 18px;
+    font-weight: 800;
+    text-align: center;
 }
-
-.httpCode1 {
+ 
+.http-code__text--color2 {
     color: green;
 }
 
-.httpCode2 {
+.http-code__text--color3 {
     color: blue;
 }
 
-.httpCode3 {
+.http-code__text--color4 {
     color: orangered;
 }
 
-.httpCode4 {
+.http-code__text--color5 {
     color: red;
 }
 
-.sectionHttpCode {
-    font-size: 16px;
-    background: #5DA9E9;
+.attention {
+    width: 300px;
+    font-size: 20px;
+    color: red;
+    font-weight: 800;
+    margin: 20px auto;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 3px grey solid;
+    text-align: center;
 }
 
 .terminal {
@@ -189,39 +195,42 @@ body {
     margin: 0;
 }
 
-.attention {
-    width: 300px;
-    font-size: 20px;
-    color: red;
-    font-weight: 800;
-    margin: 10px auto;
+.img-korsan {
+    margin: 0;
 }
 
-.box, .boxTest, .boxTest1 {
-    width: 100px;
-    height: 100px;
-    background: yellowgreen;
-    padding: 10px;
-    border: 10px solid red;
+.img-korsan__picture {
     box-sizing: border-box;
-    position: absolute;
-    top: 60px;
-    right: 10%;
-}
-
-.box {
-    z-index: 2;
-    position: absolute;
-}
-
-.boxTest {
-    top: 90px;
-    right: 5%;
-    background: blueviolet;
-    z-index: 3;
-}
-
-.sectionBox {
-    position: relative;
+    border: 2px solid #00487c;
+    max-width: 200px;
+    width: 100%;
+    margin: 16px 16px 16px 50px;
     overflow: hidden;
+    border-radius: 50%;
+}
+
+.img-korsan__signature {
+    font-size: 12px;
+    color: grey;
+    margin-left: 70px;
+}
+
+.img-box-model {
+    margin: 10px auto;
+    width: 100%;
+}
+
+.img-box-model__korsan {
+    box-sizing: border-box;
+    border: 2px solid #00487c;
+    max-width: 100px;
+    width: 100%;
+    margin: 15px;
+    float: left;
+}
+
+.img-bem {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
 }
