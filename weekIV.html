@@ -10,7 +10,7 @@
 
 <body id="up">
 	<header class="navigation">
-		<a class="navigation__link" href="index.html">Strona główna</a>&nbsp&nbsp&nbsp
+		<a class="navigation__link" href="index.html">Strona główna</a>
 		<a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
 	</header>
 	<main class="main">
@@ -192,7 +192,7 @@
 				<h3 Class="day__title">
 					Życie w pudełku II
 				</h3>
-				<section class="lorem">
+				<div class="lorem">
 					<img class="img-box-model__korsan" src="korsan-header.jpg" alt="Korsan" />
 					<p class="day__paragraph">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, tenetur quae earum,
@@ -236,7 +236,7 @@
 						possimus
 						voluptates. Repellat, totam.
 					</p>
-				</section>
+				</div>
 				<p class="day__paragraph">
 					<strong>div</strong> - nie ma znaczenia semantycznego, używamy go dgy chcemy coś
 					"opakować", tylko gdy nie istnieje semantyczny znacznik
@@ -370,7 +370,8 @@
 					To co widzimy w devtoolsach to jest DOM !
 				</p>
 				<p class="day__paragraph">
-					HTML to "instrukcja" to co znajduje się w devtoolsach (przerobione, złożone przez przegladarkę) to DOM
+					HTML to "instrukcja" to co znajduje się w devtoolsach (przerobione, złożone przez przegladarkę) to
+					DOM
 				</p>
 				<h4 Class="day__subtitle">
 					JS lubi DOM
@@ -379,18 +380,67 @@
 					DOM jest łącznikiem między światem HTML-a i JS
 				</p>
 				<p class="day__paragraph">
-					DOM nie jest HTML-em między innymi dlatego, że JS może modyfikować treść dopiero po wczytaniu strony przez przegladarkę
+					DOM nie jest HTML-em między innymi dlatego, że JS może modyfikować treść dopiero po wczytaniu strony
+					przez przegladarkę
 				</p>
 				<h4 Class="day__subtitle">
 					document.querySelector('selector')
 				</h4>
 				<p class="day__paragraph">
-					document.querySelector('selector') = $('selector') - zastępuje $ z <strong>jQuery</strong> - nie trzeba instalować jQuery
+					document.querySelector('selector') = $('selector') - zastępuje $ z <strong>jQuery</strong> - nie
+					trzeba instalować jQuery
 				</p>
 				<p class="day__paragraph">
 					const selector = document.querySelector ('selector');<br>
 					consol.log(selector);<br><br>
 					"pobranie" danego selectora do consoli
+				</p>
+				<h4 Class="day__subtitle">
+					document.querySelectorALL('selector')
+				</h4>
+				<p class="day__paragraph">
+					Przywołuje do konsoli wszystkie selektory o danej nazwie, tworzy Node List
+				</p>
+				<p class="day__paragraph">
+					<strong>Node List</strong>- lista elementów zamknięta w czymś co możemy nazwać tablicą
+				</p>
+				<p class="day__paragraph">
+					const selector = document.querySelectorALL('selector');<br>
+					consol.log(selector[n]);<br><br>
+					Przywołuje konkretny selektor [n] z Node List (bez [n] przywoła wszystkie)
+				</p>
+				<h4 Class="day__subtitle">
+					BEM - block__element--js
+				</h4>
+				<p class="day__paragraph">
+					Tworzymy klasę dla JS, nie musi mieć stylowania. Przypisane tylko do JS.
+				</p>
+				<h4 Class="day__subtitle">
+					consol.log (selector.innerHTML)
+				</h4>
+				<p class="day__paragraph">
+					Przywołanie czystej treści w konsoli. Bez całej otoczki (klasy, paragrafy, sekcje)
+				</p>
+				<h4 Class="day__subtitle">
+					nazwaZmiennej querySelector.innerHTML = 'treść'
+				</h4>
+				<p class="day__paragraph">
+					const.selector = documen.querySelector ('selector')<br>
+					selector.innerHTML = 'treść'<br><br>
+					JS zmienia daną treść HTML-a<br>
+					W podmienionej treści można używać koment z HTML-a (np. strong). Można nawet wstawiać całe szablony
+					HTML-owe
+				</p>
+				<h4 Class="day__subtitle">
+					Podsumowanie
+				</h4>
+				<p class="day__paragraph">
+					- DOM to "złożony" w przeglądarce HTML (sam HTML to "instrukcja")<br>
+					- JS może modyfikować DOM<br>
+					- Funkcja querySelector zwraca node-a (węzeł) z HTML-a (czyli nasz element). Selektor jest
+					zapisywany zgodnie z CSS<br>
+					- Korzystając z BEM-a tworzymy dodatkową klasę z modyfikatorem --js (ułatwia to identyfikację /
+					usuwa potencjalne problemy)
 				</p>
 			</section>
 		</article>
