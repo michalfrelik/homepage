@@ -2,6 +2,26 @@ body {
     background: #fff;
 }
 
+h1 {
+    font-size: 34px
+}
+
+h2 {
+    font-size: 30px
+}
+
+h3 {
+    font-size: 26px
+}
+
+h4 {
+    font-size: 22px
+}
+
+h5 {
+    font-size: 18px
+}
+
 .main {
     margin: 0 auto;
     max-width: 800px;
@@ -102,7 +122,7 @@ body {
 
 .article__title {
     color: #1a936f;
-    font-size: 40px;
+    font-size: 34px;
     line-height: 25px;
     margin: 0;
     text-align: center;
@@ -122,7 +142,6 @@ body {
 
 .day__subtitle {
     color: #00487c;
-    font-size: 20px;
     font-weight: 800;
     margin: 20px;
 }
@@ -236,3 +255,4 @@ body {
     max-width: 800px;
     width: 100%;
 }
+
