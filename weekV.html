@@ -189,10 +189,115 @@
                         console.log(x);
                         retunr x*7:<br>
                         }
-
-
+                    </p>
+                    <p class="day__paragraph">
+                        W funkcji możemy zawierać wykonywanie akcji, czasami może być bez argumentu (funkcjie
+                        bezargumentowe - może tak być)
+                    </p>
+                    <p class="day__paragraph">
+                        Wywołanie funckcji:<br>
+                        - jej nazwa + argument<br>
+                        calculate(2);<br>
+                        - console.log(calculate(2))<br>
+                        - const myCalculation = calculate (4)<br>
+                        console.log(myCalculation)
+                    </p>
+                    <h4 Class="day__subtitle">
+                        Funkcja w JS
+                    </h4>
+                    <p class="day__paragraph">
+                        - Deklarujemy nazwę funckcji (nie zawsze trzeba)<br>
+                        - W środku dokonujemy obliczenia / wykonujemy zadania<br>
+                        - Funkcja przyjmuje argumenty (ale nie musi)<br>
+                        - Funkcja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy zwraca undefined)<br>
+                    </p>
+                    <h4 Class="day__subtitle">
+                        Funkcje po co?
+                    </h4>
+                    <p class="day__paragraph">
+                        - Deklarujemy kod, który się powtarza (DRY - Don't Repeat Yourself) - jeśli mamy coś (np. kod)
+                        co się powtarza, to dobrze to umieścić w funkcji<br>
+                        - Zwiększamy czytelność kodu<br>
+                        - Łatwiejsze szukanie błęów<br>
+                        - Odpowiedzialność za wykonywanie zadania wjednym miejscu<br>
+                    </p>
+                    <h4 Class="day__subtitle">
+                        => (FAT) arrow function (funkce strzałkowe)
+                    </h4>
+                    <p class="day__paragraph">
+                        const calculateFat = x => {<br>
+                        x=x+3<br>
+                        console.log(x);<br>
+                        return x*7<br>
+                        + console.log - wywołanie<br><br>
+                        const. calculateFat = x => (x+3)*7 - zapis skrócony FAT<br>
+                        + console.log - wywołanie
+                    </p>
+                    <h4 Class="day__subtitle">
+                        => (FAT) arrow function (funkce strzałkowe)
+                    </h4>
+                    <p class="day__paragraph">
+                        - Skraca zapis deklaracji funckji<br>
+                        - Zwiększa czytelność (dyskusyjne)<br>
+                        - Nie tworzy nowego kontekstu this, nie ma dostępu do arguments i super<br>
+                        - Nie jest zamiennikiem "tradycujnej" funkcji (ale w większości przypadków nie zobaczysz
+                        różnicy)<br>
                     </p>
                 </section>
+                <section class="day">
+                    <h3 Class="day__title">
+                        U mnie (nie) działa
+                    </h3>
+                    <h4 Class="day__subtitle">
+                        Co robić jak nie działa?
+                    </h4>
+                    <p class="day__paragraph">
+                        <strong>Debugging</strong>- proces usuwania błędów i ich wyszukiwania
+                    </p>
+                    <h4 Class="day__subtitle">
+                        Co robić jak nie działa?
+                    </h4>
+                    <p class="day__paragraph">
+                        1. Sprawdź czy plik jest zapisany.<br>
+                        2. Sprawdź czy edytujesz właściwy plik<br>
+                        3. Sprawdź czy odświerzyłeś przeglądarkę usuwając tzw. cache (oamięć tymczasowa)<br>
+                        devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje wczytywanie wszystkich plików na nowo)<br>
+                        4. Sprawdź czy nie masz błędów w edytorze / w devtoolsach<br>
+                        - np. czerwona fala w edytorze<br>
+                        - devtoolsy mówuą gdzie jest błąd, co jest nie tak<br>
+                        - sprawdź DOM można wyłapać błędy w HTML-u<br>
+                        5. Zajrzyj w zakładkę Network - widać czy coś się nie wczytuje<br>
+                        6. "Pogadaj z kaczką" - przeczytaj niby komuś na głos<br>
+                        7. Google it!<br>
+                        - warto skopiować do googla nazwę błędu z konsoli<br>
+                        - najlepiej odpowiedzi szukać do roku wstecz (częste zmiany we frontendzie)<br>
+                        <strong>Nie korzystamy ze strony w3schools</strong> - dużo przeterminowanych informacji<br>
+                        w3c != w3schools<br>
+                        8. Stack Overflow - strona internetowa<br>
+                        - warto patrzeć na odpowiedzi mające najwięcej plusów<br>
+                        - najlepiej do roku wstecz
+                    </p>
+                    <h4 Class="day__subtitle">
+                        Spoko źródła
+                    </h4>
+                    <p class="day__paragraph">
+                        - Dokumentacja narzędzia z którego korzystasz np. visual code studio docs<br>
+                        - GitHub issues<br>
+                        - https://developer.mozilla.org  - Polecane do JS, specyfikacje<br>
+                        - https://devdocs.io/ - zbiór dokumentacji różnych języków (działa offline)<br>
+                        - https://caniuse.com/ - sprawdzanie wsparcia przeglądarek dla różnych fubckcji<br>
+                        - https://css-tricks.com/almanac/ - sprawdzanie własności CSS-owych ; artykuły<br>
+                        - https://www.w3.org/TR/html52/ - specyfikacja HTML-a<br>
+                        - https://www.w3.org/TR/CSS/ - specyfikacja CSS<br><br>
+                        Grupy<br>
+                        - HTML, CSS i JS: pierwsze kroki - https://www.facebook.com/groups/742940452405327/<br>
+                        - Front-end: pierwsza praca w HTML5, CSS3 i JavaScript - https://www.facebook.com/groups/1485218891734165/ <br>
+                        - Programowanie - wsparcie na starcie - https://www.facebook.com/groups/157790704649699/ <br>
+                        - Programuj dziewczyno - https://www.facebook.com/groups/programujdziewczyno/ <br>
+                         - Grupy lokalnych spotkań programistycznych (meet.js, dev.js) - https://crossweb.pl/<br>
+                    </p>
+                </section>
+
         </article>
 
     </main>
