@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+    <header class="navigation">
+        <a class="navigation__link" href="index.html">Strona główna</a>
+        <a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
+    </header>
+    <main class="main">
+        <article class="article">
+            <header class="article__header">
+                <h2 class="article__title">
+                    Tydzień V
+                </h2>
+            </header>
+            <section class="day">
+                <h3 Class="day__title">
+                    Logika w JS
+                </h3>
+                <h4 Class="day__subtitle">
+                    Operatory porównania
+                </h4>
+                <p class="day__paragraph">
+                    <strong>!=</strong>- nie równa się
+                </p>
+                <p class="day__paragraph">
+                    if ('JavaScript' != 'Java') {
+                    //wykonaj kod jeśli
+                    }
+                </p>
+                <p class="day__paragraph">
+                    <strong>Porównania:</strong>
+                </p>
+                <p class="day__paragraph">
+                    > - lewa strona większa od prawej<br>
+                    < - prawa strona większa od lewej<br>
+                        >= - lewa strona większa równa od prawej<br>
+                        <= - prawa strona większa równa od lewej<br>
+                            == - obie strony równe<br>
+                            === - obie strony równe (typeof - sprawdza typ liczba czy string)<br>
+                            != - obie strony różne<br>
+                            !== - obie strony różne (typeof - sprawdza typ liczba czy string)<br>
+                </p>
+                <h4 Class="day__subtitle">
+                    Zmienna typeof - definiuje typ danych, czy jest do liczba czy string
+                </h4>
+                <p class="day__paragraph">
+                    const liczba = 7 - liczba<br>
+                    const liczbaString = '7' - string (apostrof ' ' robi różnicę)
+                </p>
+                <p class="day__paragraph">
+                    liczba == liczbaString - <strong>true</strong>- JS konwertuje wszystko na string, dlatego równanie
+                    jest prawdziwe<br>
+                    liczba === liczbaString - <strong>false</strong>- typeof sprawdza dokładniej typ danych, rozróżnia
+                    string od liczby<br><br>
+                    Zaleca się używanie potrójnego porównania (typeof) - kod będzie bezpieczniejszy<br>
+                    liczba != liczbaString - <strong>false</strong><br>
+                    liczba !== liczbaString - <strong>true</strong>
+                </p>
+                <h4 Class="day__subtitle">
+                    Falsy - 6 wartości
+                </h4>
+                <p class="day__paragraph">
+                    - false<br>
+                    - '' ; "" ; `` - pusty string (w JS można używać wszystkich apostrofów - zalecane '')<br>
+                    - 0<br>
+                    - null<br>
+                    - undefined<br>
+                    - NaN - not a number<br>
+                    - false<br>
+                </p>
+                <h4 Class="day__subtitle">
+                    Truthy - cała reszta
+                </h4>
+                <p class="day__paragraph">
+                    - 'tekst'<br>
+                    - 12<br>
+                    - -4<br>
+                    - {}<br>
+                    - []<br>
+                    - true itd.<br>
+                </p>
+                <h4 Class="day__subtitle">
+                    AND - && - wszystkie warunki muszą być true
+                </h4>
+                <p class="day__paragraph">
+                    if ((myVariable == 4) && (myVariable == 'tekst')) {...}
+                </p>
+                <h4 Class="day__subtitle">
+                    OR - || - przynajmniej jeden warunek ma być true
+                </h4>
+                <p class="day__paragraph">
+                    if ((myVariable == 4) || (myVariable != 'tekst')) {...}
+                </p>
+                <h4 Class="day__subtitle">
+                    NOT - ! - odwraca wartość wyrażenia logicznego
+                </h4>
+                <p class="day__paragraph">
+                    if (!('JavaScript' == 'Java') {...}<br>
+                    !false => true<br>
+                    !true => false
+                </p>
+                <h4 Class="day__subtitle">
+                    ELSE
+                </h4>
+                <p class="day__paragraph">
+                    if ((myVariable == 4) { <br>
+                    //wykonaj kod jeśli true<br>
+                    }ELSE {<br>
+                    //wykonaj kod jeśli false<br>
+                    }
+                </p>
+                <h4 Class="day__subtitle">
+                    ELSE IF
+                </h4>
+                <p class="day__paragraph">
+                    if (myVariable == 4) { <br>
+                    //wykonaj kod jeśli true<br>
+                    }ELSE IF (myVariable ==8){<br>
+                    //wykonaj kod jeśli myVariable == 8<br>
+                    }<br>
+                </p>
+                <h4 Class="day__subtitle">
+                    SWITCH
+                </h4>
+                <p class="day__paragraph">
+                    switch (myVariable) { <br>
+                    case 4:<br>
+                    console.log('tekst 4');<br>
+                    break;<br>
+                    case 8:<br>
+                    console.log('test 8');<br>
+                    break;<br>
+                    default:<br>
+                    console.log('defaulte response');<br>
+                    break;<br>
+                    }<br>
+                </p>
+                <h4 Class="day__subtitle">
+                    Zapis skkrócony IF
+                </h4>
+                <p class="day__paragraph">
+                    (zmienna1 > zmianna2) ? console.log('true') : console.log('false')<br>
+                    const amIOld = (age>70) ? 'yes' : 'no' ; <br>
+                    console.log(amIOld);<br><br>
+                    To samo:<br><br>
+                    let oldindicatior;<br>
+                    if (age > 70){<br>
+                    oldindicatior = 'yes'<br>
+                    } ELSE {<br>
+                    oldindicatior = 'no'<br>
+                    }
+
+
+                    if (myVariable == 4) { <br>
+                    //wykonaj kod jeśli true<br>
+                    }ELSE IF (myVariable ==8){<br>
+                    //wykonaj kod jeśli myVariable == 8<br>
+                    }<br>
+                </p>
+                <section class="day">
+                    <h3 Class="day__title">
+                        JS : funkce
+                    </h3>
+                    <h4 Class="day__subtitle">
+                        Czym jest funkcja?
+                    </h4>
+                    <p class="day__paragraph">
+                        - na wejściu dostaje dane - argumenty<br>
+                        - dla każdego argumentu zwraca jakąś wartość<br>
+                        - posiada określony wzór<br><br>
+                        f(x)=x*7<br>
+                        f(x) - argument <br>
+                        x*7 - wynik<br><br>
+                        function calculate (x) {return x*7;}<br>
+                        function - deklaracja<br>
+                        (x) - parametr<br>
+                        return - słowo kluczowe<br>
+                        x*7 - wynik<br><br>
+                        function calculate (x){<br>
+                        x=x+3;<br>
+                        console.log(x);
+                        retunr x*7:<br>
+                        }
+
+
+                    </p>
+                </section>
+        </article>
+
+    </main>
+
+
+    <footer class="footer">
+        <a class="footer__link" href="#up">Wróc do góry</a>
+        <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+    </footer>
+</body>
+
+</html>
