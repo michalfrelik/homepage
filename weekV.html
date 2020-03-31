@@ -9,10 +9,19 @@
 </head>
 
 <body id="up">
-    <header class="navigation">
-        <a class="navigation__link" href="index.html">Strona główna</a>
-        <a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Strona główna</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="weekIII.html">Poprzedni tydzień</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
     <main class="main">
         <article class="article">
             <header class="article__header">
@@ -261,7 +270,8 @@
                         1. Sprawdź czy plik jest zapisany.<br>
                         2. Sprawdź czy edytujesz właściwy plik<br>
                         3. Sprawdź czy odświerzyłeś przeglądarkę usuwając tzw. cache (oamięć tymczasowa)<br>
-                        devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje wczytywanie wszystkich plików na nowo)<br>
+                        devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje wczytywanie
+                        wszystkich plików na nowo)<br>
                         4. Sprawdź czy nie masz błędów w edytorze / w devtoolsach<br>
                         - np. czerwona fala w edytorze<br>
                         - devtoolsy mówuą gdzie jest błąd, co jest nie tak<br>
@@ -283,7 +293,7 @@
                     <p class="day__paragraph">
                         - Dokumentacja narzędzia z którego korzystasz np. visual code studio docs<br>
                         - GitHub issues<br>
-                        - https://developer.mozilla.org  - Polecane do JS, specyfikacje<br>
+                        - https://developer.mozilla.org - Polecane do JS, specyfikacje<br>
                         - https://devdocs.io/ - zbiór dokumentacji różnych języków (działa offline)<br>
                         - https://caniuse.com/ - sprawdzanie wsparcia przeglądarek dla różnych fubckcji<br>
                         - https://css-tricks.com/almanac/ - sprawdzanie własności CSS-owych ; artykuły<br>
@@ -291,11 +301,72 @@
                         - https://www.w3.org/TR/CSS/ - specyfikacja CSS<br><br>
                         Grupy<br>
                         - HTML, CSS i JS: pierwsze kroki - https://www.facebook.com/groups/742940452405327/<br>
-                        - Front-end: pierwsza praca w HTML5, CSS3 i JavaScript - https://www.facebook.com/groups/1485218891734165/ <br>
+                        - Front-end: pierwsza praca w HTML5, CSS3 i JavaScript -
+                        https://www.facebook.com/groups/1485218891734165/ <br>
                         - Programowanie - wsparcie na starcie - https://www.facebook.com/groups/157790704649699/ <br>
                         - Programuj dziewczyno - https://www.facebook.com/groups/programujdziewczyno/ <br>
-                         - Grupy lokalnych spotkań programistycznych (meet.js, dev.js) - https://crossweb.pl/<br>
+                        - Grupy lokalnych spotkań programistycznych (meet.js, dev.js) - https://crossweb.pl/<br>
                     </p>
+                    <section class="day">
+                        <h3 Class="day__title">
+                            HTML: listy, tabele, definicje
+                        </h3>
+                        <div class="hobby">
+                            <ul class="hobby__list">
+                                <li>nagrywanie</li>
+                                <li>spanie</li>
+                                <li>jedzenie</li>
+                                <li>układanie planu dnia</li>
+                                <ol>
+                                    <li>Otwórz przeglądarkę</li>
+                                    <li>Wpisz cotenfrontend.pl</li>
+                                    <li>[enter]</li>
+                                </ol>
+                            </ul>
+                        </div>
+                        <div class="plan">
+                            <ol>
+                                <li>Otwórz przeglądarkę</li>
+                                <li>Wpisz cotenfrontend.pl</li>
+                                <li>[enter]</li>
+                            </ol>
+                        </div>
+                        <div class="glossary">
+                            <dl>
+                                <dt>HTML</dt>
+                                <dd>treść + szkielet strony</dd>
+                                <dt>CSS</dt>
+                                <dd>style (to co widzisz jak jest ładne albo brzydkie)</dd>
+                                <dt>JavaScript</dt>
+                                <dt>Es6</dt>
+                                <dd>rzeczy których teraz się uczę</dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <table>
+                                <caption>Oceny z przedmiotu WTF</caption>
+                                <thead>
+                                    <tr>
+                                        <th>Imię nazwisko</th>
+                                        <th>Ocena</th>
+                                        <th>Data</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Michał Frelik</td>
+                                        <td>3</td>
+                                        <td>31.03.2020</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maciek Korsan</td>
+                                        <td>6</td>
+                                        <td>31.03.2019</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
                 </section>
 
         </article>
