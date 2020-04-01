@@ -2,29 +2,9 @@ body {
     background: #fff;
 }
 
-h1 {
-    font-size: 34px
-}
-
-h2 {
-    font-size: 30px
-}
-
-h3 {
-    font-size: 26px
-}
-
-h4 {
-    font-size: 22px
-}
-
-h5 {
-    font-size: 18px
-}
-
 .main {
     margin: 0 auto;
-    max-width: 800px;
+    max-width: 900px;
     padding-bottom: 50px;
     padding-top: 50px;
     width: 100%;
@@ -40,9 +20,7 @@ h5 {
     width: 100%;
 }
 
-.navigation {
-
-}
+.navigation {}
 
 .navigation__item {
     display: inline;
@@ -149,13 +127,15 @@ h5 {
     color: black;
     font-size: 18px;
     line-height: 24px;
+    margin: 20px 0;
     padding: 0 0 0 30px;
 }
 
 .day__subtitle {
-    color: #00487c;
-    font-weight: 800;
-    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 0 15px 30px;
 }
 
 .day__title {
@@ -169,16 +149,30 @@ h5 {
 }
 
 .list {
-    
-}
-
-.list__title {
-    font-size: 20px;
-    list-style: none;
+    padding: 0;
 }
 
 .list__item {
     font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 0 100px;
+    padding: 0;
+}
+
+.list__item--circle {
+    list-style: circle outside;
+}
+
+.list__title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 15px 0 15px 30px;
+}
+
+.list__totality {
+    margin: 0;
+    padding: 0;
 }
 
 .lorem {
@@ -281,13 +275,9 @@ h5 {
     width: 100%;
 }
 
-.hobby {
-
-}
+.hobby {}
 
 .hobby__list {
     list-style: none;
     padding: 0;
-
-
 }

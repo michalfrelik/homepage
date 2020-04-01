@@ -36,43 +36,43 @@
 				<h3 Class="day__title">
 					GIT
 				</h3>
-				<h4 Class="day__subtitle">
-					Konfiguracja
-				</h4>
-				<p class="day__paragraph">
-					1.Uruchamiamy Terminal.<br>
-					2.Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong><br>
-					3.Wpisujemy <strong>git config --global user.email</strong><br>
-					4.Sprawdzenie <em>git config --get user.name / user.email</em>
-				</p>
+				<div class="list">
+					<p class="list__title">Konfiguracja</p>
+					<ol class="list__totality">
+						<li class="list__item">Uruchamiamy Terminal.</li>
+						<li class="list__item">Wpisujemy <strong>git config --global user.name "Jan Nowak"</strong></li>
+						<li class="list__item">Wpisujemy <strong>git config --global user.email</strong></li>
+						<li class="list__item">Sprawdzenie <em>git config --get user.name / user.email</em></li>
+					</ol>
+				</div>
 				<h4 Class="day__subtitle">
 					CTRL + C - kasuje ostatnie polecenie w terminalu bez jeko wykonywania
-				</h4><br>
+				</h4>
 				<h4 Class="day__subtitle">
 					Instalując HIT-a na Windowsa instalujemy również GIT BASH-a - terminal linuksowy
-				</h4><br>
+				</h4>
 				<h4 Class="day__subtitle">
 					Konfiguracja projektu (REPORYTORIUM = PROJEKT)
 				</h4>
-				<p class="day__paragraph">
-					<strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w
-					projekcie<br>
-					1. Wchodzimy, przez terminal, do katalogu projektu (Homepage).<br>
-					2. Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog
-					<strong>.git</strong>-
-					przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)
-				</p>
-				<h4 Class="day__subtitle">
-					Komendy:
-				</h4>
-				<p class="day__paragraph">
-					<strong>- git status</strong>- wyświetla status git-a<br>
-					<strong>- git add .</strong>- dodaje wszystkie katalogi, elementy do git-a<br>
-					<strong>- git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a<br>
-					<strong>- gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)<br>
-					<strong>- git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong>
-					<strong>- git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie
-				</p>
+				<div class="list">
+					<p class="list__title"><strong>Reporytorium</strong>- opis, mapa wszystkich plików znajdujących się w projekcie</p>
+					<ol class="list__totality">
+						<li class="list__item">Wchodzimy, przez terminal, do katalogu projektu (Homepage).</li>
+						<li class="list__item">Komenda: <strong>git init</strong> - założenie reporytorium (git tworzy ukryty katalog
+							<strong>.git</strong>-
+							przechowucje historię, pliki itp <strong>nie wolno go usuwać</strong>)</li>
+				</div>
+				<div class="list">
+					<p class="list__title">Komendy:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle"><strong>git status</strong>- wyświetla status git-a</li>
+						<li class="list__item list__item--circle"><strong>git add .</strong>- dodaje wszystkie katalogi, elementy do git-a</li>
+						<li class="list__item list__item--circle"><strong>git add <em>index.html</em></strong>- dodaje konkretny katalog do git-a</li>
+						<li class="list__item list__item--circle"><strong>gitk</strong>- narzędzie do podglądania zmian w naszym repozytorium (projekcie)</li>
+						<li class="list__item list__item--circle"><strong>git push</strong>- wypchnięcie commitów do <strong>GitHub-a</strong></li>
+						<li class="list__item list__item--circle"><strong>git commit -m "nazwa commitu"</strong>- dodaje nowy commit o podanej nazwie</li>
+					</ul>
+				</div>
 				<h4 Class="day__subtitle">
 					Commit = stan projektu (opis tego co się zmieniło od ostatniego zapisu)
 				</h4>
@@ -95,20 +95,20 @@
 					(programistyczna
 					wizytówka)
 				</p>
-				<h4 Class="day__subtitle">
-					GIT Podsumowanie:
-				</h4>
-				<p class="day__paragraph">
-					- GIT pozwala na sprawne zarządzanie zmianami w projekcie (<br>
-					- Działa lokalnie<br>
-					- Do działania zdalnego potrzebuje serwera (np. GitHub)<br>
-					- Znajomość podstaw GIT-a jest wymagana niezależnie od technologii<br>
-					- Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa
-					(prawdziwe dane,
-					dużo projektów, cużo commitów)<br>
-					- Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)<br>
-					- Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push
-				</p>
+				<div class="list">
+					<p class="list__title">GIT Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">GIT pozwala na sprawne zarządzanie zmianami w projekcie</li>
+						<li class="list__item list__item--circle">Działa lokalnie</li>
+						<li class="list__item list__item--circle">Do działania zdalnego potrzebuje serwera (np. GitHub)</li>
+						<li class="list__item list__item--circle">Znajomość podstaw GIT-a jest wymagana niezależnie od technologii</li>
+						<li class="list__item list__item--circle">Konto na GitHubie jest Twoją programistyczną wizytówką, zadbaj aby była ładna i prawdziwa
+							(prawdziwe dane,
+							dużo projektów, cużo commitów)</li>
+						<li class="list__item list__item--circle">Commitujemy jak dokładamy jakąś widoczną zmianę do projektu (lepiej częściej, niż za mało)e</li>
+						<li class="list__item list__item--circle">Podstawowy ﬂow: git add . / git commit -m "opis zmiany" / git push</li>
+					</ul>
+				</div>
 			</section>
 			<section class="day">
 				<h3 Class="day__title">
@@ -186,19 +186,19 @@
 					margin: 10px auto; - środkowanie treści (margines górny i dolny - 10 px, boczne marginesy
 					wyśrodkowane)
 				</p>
-				<h4 Class="day__subtitle">
-					Jednostki
-				</h4>
-				<p class="day__paragraph">
-					- 0 - może być bez jednostek<br>
-					- px - piksele<br>
-					- % - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)<br>
-					- vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być
-					stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od
-					szerokośći
-					strony (niepolecane)<br>
-					- vh = viewport hight
-				</p>
+				<div class="list">
+					<p class="list__title">Jednostki</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">0 - może być bez jednostek</li>
+						<li class="list__item list__item--circle">px - piksele</li>
+						<li class="list__item list__item--circle">% - procenty - brany jest z "rodzica"(np. procent szerokości rodzica)</li>
+						<li class="list__item list__item--circle">vw = viewport width - procent szerokości całego okna (jednosta niezależna od rodzica). Może być
+							stosowane w innych rzeczach np. font-size: 50 vw - czcionka będzie rosła/malała zależnie od
+							szerokośći
+							strony (niepolecane)</li>
+						<li class="list__item list__item--circle">vh = viewport hight</li>
+					</ul>
+				</div>
 			</section>
 			<section class="day">
 				<h3 Class="day__title">
@@ -297,31 +297,31 @@
 					Float nie służy do budowania layoutów !<br>
 					Zastępują je flexboxy
 				</p>
-				<h4 Class="day__subtitle">
-					Podsumowanie:
-				</h4>
-				<p class="day__paragraph">
-					- świat stron internetowych jest 2,5 wymiarowy (warstwy/boxy mogą na siebie nachodzić)<br>
-					- każdy element jest zamknięty w "pudełku", które ma swoje rozmiary<br>
-					- CSS posiada różne jednostki (stosujemy wg przeznaczenia, upodobania)<br>
-					- nie używamy floatów do budowania layoutów
-				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">świat stron internetowych jest 2,5 wymiarowy (warstwy/boxy mogą na siebie nachodzić)</li>
+						<li class="list__item list__item--circle">każdy element jest zamknięty w "pudełku", które ma swoje rozmiary</li>
+						<li class="list__item list__item--circle">CSS posiada różne jednostki (stosujemy wg przeznaczenia, upodobania)</li>
+						<li class="list__item list__item--circle">nie używamy floatów do budowania layoutów</li>
+					</ul>
+				</div>
 			</section>
 			<section class="day">
 				<h3 Class="day__title">
 					BEM = Block Element Modifier
 				</h3>
-				<h4 class=h4>
-					Dlaczego powstał BEM
-				</h4>
-				<p class="day__paragraph">
-					- świat stylowania doszedł do wsysokiego stopnia skomplikowania (pecyficzność)<br>
-					- problem z logicznym nazywaniem klas<br>
-					- brak ujednoliconego sposobu stylowania<br>
-					- Importanty , nadpisywanie rzeczy<br>
-					- brak odwzorowania struktury HTML w CSS<br>
-					- stylowanie kilkoma klasami, powtarzające się nazwy
-				</p>
+				<div class="list">
+					<p class="list__title">Dlaczego powstał BEM</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">świat stylowania doszedł do wsysokiego stopnia skomplikowania (pecyficzność)</li>
+						<li class="list__item list__item--circle">problem z logicznym nazywaniem klas</li>
+						<li class="list__item list__item--circle">brak ujednoliconego sposobu stylowania</li>
+						<li class="list__item list__item--circle">Importanty , nadpisywanie rzeczy</li>
+						<li class="list__item list__item--circle">brak odwzorowania struktury HTML w CSS</li>
+						<li class="list__item list__item--circle">stylowanie kilkoma klasami, powtarzające się nazwy</li>
+					</ul>
+				</div>
 				<h4 Class="day__subtitle">
 					BEM jak na dłoni
 				</h4>
@@ -354,16 +354,16 @@
 					W BEM-ie zalecane jes stosowanie małych liter i myślników zamiast spacni (nie
 					camaleCase)
 				</p>
-				<h4 Class="day__subtitle">
-					Podsumowanie
-				</h4>
-				<p class="day__paragraph">
-					- Szukamy elementów na stronie i dzielimy ją na bloki<br>
-					- Myślimy o elementach składowych. Robimy analizę i selekcję<br>
-					- Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla
-					niego
-					wartości, nie przepisujemy rzeczy z klasy bazowej)
-				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">Szukamy elementów na stronie i dzielimy ją na bloki</li>
+						<li class="list__item list__item--circle">Myślimy o elementach składowych. Robimy analizę i selekcję</li>
+						<li class="list__item list__item--circle">Tworzymy dwie klasy jeśli element ma modyfikator (w modyfikatorze zmieniamy tylko unikalne dla
+							niego
+							wartości, nie przepisujemy rzeczy z klasy bazowej)</li>
+					</ul>
+				</div>
 			</section>
 			<section class="day">
 				<h3 class="day__title day__title--js">
@@ -443,17 +443,17 @@
 					W podmienionej treści można używać koment z HTML-a (np. strong). Można nawet wstawiać całe szablony
 					HTML-owe
 				</p>
-				<h4 Class="day__subtitle">
-					Podsumowanie
-				</h4>
-				<p class="day__paragraph">
-					- DOM to "złożony" w przeglądarce HTML (sam HTML to "instrukcja")<br>
-					- JS może modyfikować DOM<br>
-					- Funkcja querySelector zwraca node-a (węzeł) z HTML-a (czyli nasz element). Selektor jest
-					zapisywany zgodnie z CSS<br>
-					- Korzystając z BEM-a tworzymy dodatkową klasę z modyfikatorem --js (ułatwia to identyfikację /
-					usuwa potencjalne problemy)
-				</p>
+				<div class="list">
+					<p class="list__title">Podsumowanie:</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">DOM to "złożony" w przeglądarce HTML (sam HTML to "instrukcja")</li>
+						<li class="list__item list__item--circle">JS może modyfikować DOM</li>
+						<li class="list__item list__item--circle">Funkcja querySelector zwraca node-a (węzeł) z HTML-a (czyli nasz element). Selektor jest
+							zapisywany zgodnie z CSS</li>
+						<li class="list__item list__item--circle">Korzystając z BEM-a tworzymy dodatkową klasę z modyfikatorem --js (ułatwia to identyfikację /
+							usuwa potencjalne problemy)</li>
+					</ul>
+				</div>
 			</section>
 		</article>
 
