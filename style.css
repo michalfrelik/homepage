@@ -34,7 +34,7 @@ h5 {
     background: #fff;
     box-sizing: border-box;
     left: 0;
-    padding: 16px;
+    padding: 0 0 0 16px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -166,6 +166,19 @@ h5 {
     margin: 0 auto;
     padding: 5px 0 5px 20px;
     width: 100%;
+}
+
+.list {
+    
+}
+
+.list__title {
+    font-size: 20px;
+    list-style: none;
+}
+
+.list__item {
+    font-size: 18px;
 }
 
 .lorem {
