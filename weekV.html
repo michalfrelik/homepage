@@ -73,29 +73,31 @@
                     liczba != liczbaString - <strong>false</strong><br>
                     liczba !== liczbaString - <strong>true</strong>
                 </p>
-                <h4 Class="day__subtitle">
-                    Falsy - 6 wartości
-                </h4>
-                <p class="day__paragraph">
-                    - false<br>
-                    - '' ; "" ; `` - pusty string (w JS można używać wszystkich apostrofów - zalecane '')<br>
-                    - 0<br>
-                    - null<br>
-                    - undefined<br>
-                    - NaN - not a number<br>
-                    - false<br>
-                </p>
-                <h4 Class="day__subtitle">
-                    Truthy - cała reszta
-                </h4>
-                <p class="day__paragraph">
-                    - 'tekst'<br>
-                    - 12<br>
-                    - -4<br>
-                    - {}<br>
-                    - []<br>
-                    - true itd.<br>
-                </p>
+                <div class="list">
+                    <p class="list__title">Falsy - 6 wartości:</p>
+                    <ul class="list__totality">
+                        <li class="list__item list__item--circle">false</li>
+                        <li class="list__item list__item--circle">'' ; "" ; `` - pusty string (w JS można używać
+                            wszystkich apostrofów - zalecane '')</li>
+                        <li class="list__item list__item--circle">0</li>
+                        <li class="list__item list__item--circle">null</li>
+                        <li class="list__item list__item--circle">undefined</li>
+                        <li class="list__item list__item--circle">NaN - not a number</li>
+                        <li class="list__item list__item--circle">false</li>
+
+                    </ul>
+                </div>
+                <div class="list">
+                    <p class="list__title">Truthy - cała reszta:</p>
+                    <ul class="list__totality">
+                        <li class="list__item list__item--circle">'tekst'</li>
+                        <li class="list__item list__item--circle">12</li>
+                        <li class="list__item list__item--circle">-4</li>
+                        <li class="list__item list__item--circle">{}</li>
+                        <li class="list__item list__item--circle">[]</li>
+                        <li class="list__item list__item--circle">true itd.</li>
+                    </ul>
+                </div>
                 <h4 Class="day__subtitle">
                     AND - && - wszystkie warunki muszą być true
                 </h4>
@@ -215,25 +217,30 @@
                                 console.log(myCalculation)</li>
                         </ul>
                     </div>
-                    <h4 Class="day__subtitle">
-                        Funkcja w JS
-                    </h4>
-                    <p class="day__paragraph">
-                        - Deklarujemy nazwę funckcji (nie zawsze trzeba)<br>
-                        - W środku dokonujemy obliczenia / wykonujemy zadania<br>
-                        - Funkcja przyjmuje argumenty (ale nie musi)<br>
-                        - Funkcja zwraca zawsze coś (nawet jeśli nie mamy return - wtedy zwraca undefined)<br>
-                    </p>
-                    <h4 Class="day__subtitle">
-                        Funkcje po co?
-                    </h4>
-                    <p class="day__paragraph">
-                        - Deklarujemy kod, który się powtarza (DRY - Don't Repeat Yourself) - jeśli mamy coś (np. kod)
-                        co się powtarza, to dobrze to umieścić w funkcji<br>
-                        - Zwiększamy czytelność kodu<br>
-                        - Łatwiejsze szukanie błęów<br>
-                        - Odpowiedzialność za wykonywanie zadania wjednym miejscu<br>
-                    </p>
+                    <div class="list">
+                        <p class="list__title">Funkcja w JS:</p>
+                        <ul class="list__totality">
+                            <li class="list__item list__item--circle">Deklarujemy nazwę funckcji (nie zawsze trzeba)
+                            </li>
+                            <li class="list__item list__item--circle">W środku dokonujemy obliczenia / wykonujemy
+                                zadania</li>
+                            <li class="list__item list__item--circle">Funkcja przyjmuje argumenty (ale nie musi)</li>
+                            <li class="list__item list__item--circle">Funkcja zwraca zawsze coś (nawet jeśli nie mamy
+                                return - wtedy zwraca undefined)</li>
+                        </ul>
+                    </div>
+                    <div class="list">
+                        <p class="list__title">Funkcje po co?</p>
+                        <ul class="list__totality">
+                            <li class="list__item list__item--circle">Deklarujemy kod, który się powtarza (DRY - Don't
+                                Repeat Yourself) - jeśli mamy coś (np. kod)
+                                co się powtarza, to dobrze to umieścić w funkcji</li>
+                            <li class="list__item list__item--circle">Zwiększamy czytelność kodu</li>
+                            <li class="list__item list__item--circle">Łatwiejsze szukanie błęów</li>
+                            <li class="list__item list__item--circle">Odpowiedzialność za wykonywanie zadania wjednym
+                                miejscu</li>
+                        </ul>
+                    </div>
                     <h4 Class="day__subtitle">
                         => (FAT) arrow function (funkce strzałkowe)
                     </h4>
@@ -246,51 +253,65 @@
                         const. calculateFat = x => (x+3)*7 - zapis skrócony FAT<br>
                         + console.log - wywołanie
                     </p>
-                    <h4 Class="day__subtitle">
-                        => (FAT) arrow function (funkce strzałkowe)
-                    </h4>
-                    <p class="day__paragraph">
-                        - Skraca zapis deklaracji funckji<br>
-                        - Zwiększa czytelność (dyskusyjne)<br>
-                        - Nie tworzy nowego kontekstu this, nie ma dostępu do arguments i super<br>
-                        - Nie jest zamiennikiem "tradycujnej" funkcji (ale w większości przypadków nie zobaczysz
-                        różnicy)<br>
-                    </p>
+                    <div class="list">
+                        <p class="list__title">=> (FAT) arrow function (funkce strzałkowe)</p>
+                        <ul class="list__totality">
+                            <li class="list__item list__item--circle">Zwiększa czytelność (dyskusyjne)</li>
+                            <li class="list__item list__item--circle">Zwiększamy czytelność kodu</li>
+                            <li class="list__item list__item--circle">Nie tworzy nowego kontekstu this, nie ma dostępu
+                                do arguments i super/li>
+                            <li class="list__item list__item--circle">Nie jest zamiennikiem "tradycujnej" funkcji (ale w
+                                większości przypadków nie zobaczysz
+                                różnicy)</li>
+                        </ul>
+                    </div>
                 </section>
                 <section class="day">
                     <h3 Class="day__title">
                         U mnie (nie) działa
                     </h3>
-                    <h4 Class="day__subtitle">
-                        Co robić jak nie działa?
-                    </h4>
                     <p class="day__paragraph">
                         <strong>Debugging</strong>- proces usuwania błędów i ich wyszukiwania
                     </p>
-                    <h4 Class="day__subtitle">
-                        Co robić jak nie działa?
-                    </h4>
-                    <p class="day__paragraph">
-                        1. Sprawdź czy plik jest zapisany.<br>
-                        2. Sprawdź czy edytujesz właściwy plik<br>
-                        3. Sprawdź czy odświerzyłeś przeglądarkę usuwając tzw. cache (oamięć tymczasowa)<br>
-                        devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje wczytywanie
-                        wszystkich plików na nowo)<br>
-                        4. Sprawdź czy nie masz błędów w edytorze / w devtoolsach<br>
-                        - np. czerwona fala w edytorze<br>
-                        - devtoolsy mówuą gdzie jest błąd, co jest nie tak<br>
-                        - sprawdź DOM można wyłapać błędy w HTML-u<br>
-                        5. Zajrzyj w zakładkę Network - widać czy coś się nie wczytuje<br>
-                        6. "Pogadaj z kaczką" - przeczytaj niby komuś na głos<br>
-                        7. Google it!<br>
-                        - warto skopiować do googla nazwę błędu z konsoli<br>
-                        - najlepiej odpowiedzi szukać do roku wstecz (częste zmiany we frontendzie)<br>
-                        <strong>Nie korzystamy ze strony w3schools</strong> - dużo przeterminowanych informacji<br>
-                        w3c != w3schools<br>
-                        8. Stack Overflow - strona internetowa<br>
-                        - warto patrzeć na odpowiedzi mające najwięcej plusów<br>
-                        - najlepiej do roku wstecz
-                    </p>
+                    <div class="list">
+                        <p class="list__title">Co robić jak nie działa?</p>
+                        <ol class="list__totality">
+                            <li class="list__item">Sprawdź czy plik jest zapisany.</li>
+                            <li class="list__item">Sprawdź czy edytujesz właściwy plik</li>
+                            <li class="list__item">Sprawdź czy odświerzyłeś przeglądarkę usuwając tzw. cache (oamięć
+                                tymczasowa)<br>
+                                devtools -> Network -> Disable cache (usuwa pliki zapisane tymczasowo, powoduje
+                                wczytywanie
+                                wszystkich plików na nowo)</li>
+                            <li class="list__item">Sprawdź czy nie masz błędów w edytorze / w devtoolsach</li>
+                            <ul class="list__totality">
+                                <li class="list__item list__item--sub-list">np. czerwona fala w edytorze</li>
+                                <li class="list__item list__item--sub-list">devtoolsy mówuą gdzie jest błąd, co jest nie
+                                    tak</li>
+                                <li class="list__item list__item--sub-list">sprawdź DOM można wyłapać błędy w HTML-u
+                                </li>
+                            </ul>
+                            <li class="list__item">Zajrzyj w zakładkę Network - widać czy coś się nie wczytuje</li>
+                            <li class="list__item">"Pogadaj z kaczką" - przeczytaj niby komuś na głos</li>
+                            <li class="list__item">Google it!</li>
+                            <ul class="list__totality">
+                                <li class="list__item list__item--sub-list">warto skopiować do googla nazwę błędu z
+                                    konsoli</li>
+                                <li class="list__item list__item--sub-list">najlepiej odpowiedzi szukać do roku wstecz
+                                    (częste zmiany we
+                                    frontendzie)<br>
+                                    <strong>Nie korzystamy ze strony w3schools</strong> - dużo przeterminowanych
+                                    informacji<br>
+                                    w3c != w3schools</li>
+                            </ul>
+                            <li class="list__item">Stack Overflow - strona internetowa</li>
+                                <ul class="list__totality">
+                                    <li class="list__item list__item--sub-list">warto patrzeć na odpowiedzi mające
+                                        najwięcej plusów</li>
+                                    <li class="list__item list__item--sub-list">najlepiej do roku wstecz</li>
+                                </ul>
+                        </ol>
+                    </div>
                     <h4 Class="day__subtitle">
                         Spoko źródła
                     </h4>

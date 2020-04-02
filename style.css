@@ -159,6 +159,10 @@ body {
     padding: 0;
 }
 
+.list__item--sub-list {
+    margin: 0 0 0 150px;
+}
+
 .list__item--circle {
     list-style: circle outside;
 }
