@@ -1,3 +1,12 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:after, *:before {
+    box-sizing: inherit;
+}
+
+
 body {
     background: #fff;
 }
@@ -12,7 +21,6 @@ body {
 
 .site-header {
     background: #fff;
-    box-sizing: border-box;
     left: 0;
     padding: 0 0 0 16px;
     position: fixed;
@@ -20,7 +28,9 @@ body {
     width: 100%;
 }
 
-.navigation {}
+.navigation {
+    margin: 0;
+}
 
 .navigation__item {
     display: inline;
@@ -55,7 +65,7 @@ body {
 }
 
 .homepage {
-    box-sizing: border-box;
+    margin: 0;
 }
 
 .homepage__div {
@@ -71,7 +81,6 @@ body {
     background: #1a936f;
     border: 3px solid #00487c;
     border-radius: 30px;
-    box-sizing: border-box;
     height: 100px;
     margin: 10px auto;
     max-width: 680px;
@@ -93,7 +102,6 @@ body {
 
 .homepage__section {
     border: 3px solid #00487c;
-    box-sizing: border-box;
     margin: 0 auto;
     width: 100%;
 }
@@ -103,7 +111,6 @@ body {
 }
 
 .article__header {
-    box-sizing: border-box;
     height: 50px;
     margin: 10px auto;
     padding: 10px;
@@ -140,7 +147,6 @@ body {
 
 .day__title {
     border: 3px solid #00487c;
-    box-sizing: border-box;
     color: black;
     font-size: 30px;
     margin: 0 auto;
@@ -191,7 +197,6 @@ body {
     background: #C1E0F7;
     border: solid grey 3px;
     border-radius: 30px;
-    box-sizing: border-box;
     margin: 0 auto;
     max-width: 300px;
     width: 100%;
@@ -222,7 +227,6 @@ body {
 
 .attention {
     border: 3px grey solid;
-    box-sizing: border-box;
     color: red;
     font-size: 20px;
     font-weight: 800;
@@ -246,7 +250,6 @@ body {
 .img-korsan__picture {
     border: 2px solid #00487c;
     border-radius: 50%;
-    box-sizing: border-box;
     margin: 16px 16px 16px 50px;
     max-width: 200px;
     overflow: hidden;
@@ -266,7 +269,6 @@ body {
 
 .img-box-model__korsan {
     border: 2px solid #00487c;
-    box-sizing: border-box;
     float: left;
     margin: 15px;
     max-width: 100px;
