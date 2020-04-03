@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="normalize.css" rel="stylesheet" type="text/css">
-    <link href="style.css" rel="stylesheet" type="text/css">
+	<link href="../Homepage/css/normalize.css" rel="stylesheet" type="text/css">
+	<link href="../Homepage/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body id="up">
@@ -532,6 +532,47 @@
                     <strong>flex:</strong> flex-grow flex-shrink flex-basis - skrót
                 </p>
             </section>
+            <section class="day">
+                <h3 Class="day__title">
+                    Tła
+                </h3>                
+                <p class="day__paragraph">
+                    <strong>flex:</strong> flex-grow flex-shrink flex-basis - skrót
+                </p>
+                <p class="day__paragraph">
+                    <strong>backgroun-image:</strong> url('ścieżka do pliku')
+                </p>
+                <p class="day__paragraph">
+                    <strong>background-position:</strong> (0 0 ; top top ; bottom bottom ; center center (środek tła zawsze będzie na środku strony) ; xx% xx% ; xxpx xxpx , ... ...;) - ustawia tło względem elementu , który to tło dostaje
+                </p>
+                <p class="day__paragraph">
+                    <strong>backgroun-repeat:</strong> (repeat - domyślne ; repeat-x ; repeat-y ; no-repeat ; round - otacza cały element (przycina) ; space - działa jak flexbox (nie przycina)) - powtarzanie tła
+                </p>
+                <p class="day__paragraph">
+                    <strong>backgroun-attachment:</strong> (scroll - domyślne, tło idzie za stroną ; fixed - tło się nie rusza ; local (local + height: xx + overflow:scroll - powoduje skrolowanie tła w jakimś mniejszym okienku))
+                </p>
+                <p class="day__paragraph">
+                    <strong>backgroun-origin:</strong> (padding-box - domyślne ; border-box ; content-box) - definiuje w którym miejscu tło powinno się zaczynać (mało wykorzystywane)
+                </p>
+                <p class="day__paragraph">
+                    <strong>background-clip:</strong> (padding-box ; border-box ; content-box) - mówi w którym miejscu tło powinno być cięte
+                </p>
+                <p class="day__paragraph">
+                    <strong>backgroun-color:</strong> wartość koloru
+                </p>
+                <p class="day__paragraph">
+                    <strong>rgb(a):</strong>tło półprzźroczyste (255 255 255 0,5) - 50%
+                </p>
+                <p class="day__paragraph">
+                    <strong>background-size:</strong>(auto - domyślne ; cover - zawsze wypełnia stronę ; contain - cały obrazek jest widoczny (dopasowuje się) ; width height) - jak duże ma być tło
+                </p>
+                <p class="day__paragraph">
+                    <strong>Gradienty - </strong>strona do generowania gradientów https://cssgradient.io/gradient-backgrounds/
+                </p>
+                <p class="day__paragraph">
+                    <strong>background:</strong> - opis skrócony - może nadpisywać wszystki powyższe wartości (zawiera je w sobie)
+                </p>
+            </section>
 
         </article>
 
@@ -542,6 +583,9 @@
         <a class="footer__link" href="#up">Wróc do góry</a>
         <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
     </footer>
+
+    <script src="../Homepage/js/main.js"> </script>
+
 </body>
 
 </html>
