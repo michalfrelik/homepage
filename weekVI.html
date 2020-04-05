@@ -34,19 +34,14 @@
                     <h3 Class="day__title">
                         Formularze
                     </h3>
-                    <form class="form">
+                    <form class="form" action="http://dev.cotenfrontend.pl" method="post">
                         <p>
                             <label for="name">Imię:</label>
-                            <input name="name" placeholder="proszę podać imię" id="name">
+                            <input required name="name" placeholder="proszę podać imię" id="name">
                         </p>
                         <p>
                             <label for="surname">Nazwisko:<br>
                                 <input type="text" value="Frelik" name="surname" id="surname">
-                            </label>
-                        </p>
-                        <p>
-                            <label for="age">Nazwisko:<br>
-                                <input type="number" value="26" name="age" id="age">
                             </label>
                         </p>
                         <p>
@@ -95,17 +90,33 @@
                             <label for="mycheckbox2">Check 2</label>
                         </p>
                         <p>
-                            <label for="mycheckbox2">Check 2</label><br>
-                            <input type="range" min="0" max="100" step="10" value="70" checked value="opcja 4" name="mycheckbox" id="mycheckbox2">
+                            <label for="range">Check 2</label><br>
+                            <input type="range" min="0" max="100" step="10" value="70" checked name="range" id="range">
                         </p>
                         <p>
                             <label for="password">Password</label><br>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$">
                         </p>
                         <p>
                             <label for="file">Twój avatar </label><br>
                             <input type="file" name="file" id="file">
                         </p>
+
+                        <p>
+                            <label for="select">Proszę wybrać odpowiedź</label>
+                            <select name="select" id="select">
+                                <option value="user selected yes">tak</option>
+                                <option value="user selected no">nie</option>
+                                <option value="user selected maybe">może</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <label for="textarea">Proszę opisać problem</label><br>
+                            <textarea id="textarea" name="textarea"></textarea>
+                        </p>
+
+                        <input type="submit" value="Wyślij formularz">
                     </form>
                 </section>
             </header>
