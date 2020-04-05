@@ -6,9 +6,11 @@ html {
     box-sizing: inherit;
 }
 
-
 body {
-    background: #fff;
+}
+.page {
+    background-color: #fff;
+    height: 100vh;
 }
 
 .main {
@@ -20,7 +22,7 @@ body {
 }
 
 .site-header {
-    background: #fff;
+    background-image: url('../img/225.png');
     left: 0;
     padding: 0 0 0 16px;
     position: fixed;
@@ -32,16 +34,17 @@ body {
     margin: 0;
 }
 
-.navigation__item {    
-    width: 150px;
+.navigation__item {
+    margin: 0;
 }
 
 .navigation__link {
-    color: #1a936f;
+    color: black;
     text-decoration: none;
 }
 
 .navigation__list {
+    align-items: center;
     display: flex;
     justify-content: space-around;
     flex-flow: row nowrap;
@@ -58,7 +61,7 @@ body {
 
 .footer__link {
     bottom: 10px;
-    color: #1a936f;
+    color: black;
     position: fixed;
     right: 10px;
     text-decoration: none;
@@ -74,7 +77,7 @@ body {
 
 .homepage__header {
     padding: 10px;
-    background: #1a936f;
+    background-image: url(../img/11698.png);
     border: 3px solid #00487c;
     border-radius: 30px;
     height: 100%;
@@ -84,7 +87,7 @@ body {
 }
 
 .homepage__header-title {
-    color: #00487c;
+    color: whitesmoke;
     font-size: 48px;
     margin: 0;
     text-align: center;
@@ -92,9 +95,18 @@ body {
 }
 
 .homepage__link {
-    color: #1a936f;
+    color: black;
     font-size: 30px;
     text-decoration: none;
+}
+
+.homepage__link--position {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+
 }
 
 .homepage__list {    
@@ -109,6 +121,7 @@ body {
 }
 
 .homepage__week {
+    align-items: center;
     border: 3px solid #00487c;
     height: 100px;
     text-align: center;
@@ -127,7 +140,7 @@ body {
 }
 
 .article__title {
-    color: #1a936f;
+    color: black;
     font-size: 34px;
     line-height: 25px;
     margin: 0;
@@ -160,6 +173,7 @@ body {
     font-size: 30px;
     margin: 0 auto;
     padding: 5px 0 5px 20px;
+    text-align: center;
     width: 100%;
 }
 
@@ -203,7 +217,9 @@ body {
 }
 
 .http-code {
-    background: #C1E0F7;
+    background-image: url('../img/225.png');
+    background-position: center center;
+    background-size: cover;
     border: solid grey 3px;
     border-radius: 30px;
     margin: 0 auto;
@@ -293,4 +309,8 @@ body {
 .table {
     border: solid grey 3px;
     margin: 10px auto;
+}
+
+.web-link{
+    text-decoration: none;
 }
