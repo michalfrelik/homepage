@@ -168,12 +168,14 @@ body {
 }
 
 .day__title {
+    background-image: url(../img/11698.png);
     border: 3px solid #00487c;
-    color: black;
+    color: whitesmoke;
     font-size: 30px;
     margin: 0 auto;
     padding: 5px 0 5px 20px;
     text-align: center;
+    text-transform: uppercase;
     width: 100%;
 }
 
@@ -308,7 +310,20 @@ body {
 
 .table {
     border: solid grey 3px;
+    border-collapse: collapse;
     margin: 10px auto;
+    table-layout: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.table__inside-border {
+    border: solid black 1px;
+
+}
+
+.table__thead{
+    background-color: lightgrey;
 }
 
 .web-link{
