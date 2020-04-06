@@ -57,7 +57,6 @@ body {
     bottom: 10px;
     clear: both;
     left: 10px;
-    position: fixed;
 }
 
 .footer__link {
@@ -70,10 +69,34 @@ body {
 
 .footer__paragraph {
     font-size: 14px;
+    bottom: 10px;
+    left: 10px;
 }
 
 .homepage {
     margin: 0;
+}
+
+.homepage__form {
+    padding: 10px;
+    background-image: url(../img/11698.png);
+    border: 3px solid #00487c;
+    border-radius: 30px;
+    height: 60px;
+    margin: 10px auto;
+    text-align: center;
+    width: 250px;
+
+}
+
+.homepage__form--text {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.homepage__form--position {
+    height: 100%;
+    margin: 0 auto;
 }
 
 .homepage__header {
@@ -115,17 +138,17 @@ body {
     border: 3px solid #00487c;
     display: flex;
     flex-flow: row wrap;
-    height: 80vh;
+    height: 100%;
     justify-content: space-around;
     min-height: 600px;
     width: 100%;
 }
 
 .homepage__week {
-    align-items: center;
     border: 3px solid #00487c;
     height: 100px;
     text-align: center;
+    margin: 20px;
     width: 400px;
 }
 
@@ -329,6 +352,7 @@ body {
 
 .web-link{
     text-decoration: none;
+    color: #00487c;
 }
 
 .form {
