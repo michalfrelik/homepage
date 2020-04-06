@@ -6,8 +6,6 @@ html {
     box-sizing: inherit;
 }
 
-body {
-}
 .page {
     background-color: #fff;
     height: 100vh;
@@ -78,25 +76,27 @@ body {
 }
 
 .homepage__form {
-    padding: 10px;
     background-image: url(../img/11698.png);
     border: 3px solid #00487c;
     border-radius: 30px;
-    height: 60px;
+    height: 100%;
     margin: 10px auto;
-    text-align: center;
-    width: 250px;
-
+    max-width: 480px;
+    min-height: 100px;
+    padding: 10px;
+    width: 100%;
 }
 
 .homepage__form--text {
+    align-items: center;
     color: whitesmoke;
-    text-decoration: none;
-}
-
-.homepage__form--position {
+    display: flex;
+    font-size: 28px;
     height: 100%;
-    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .homepage__header {

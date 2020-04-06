@@ -30,26 +30,134 @@
                     Tydzień VI
                 </h2>
             </header>
-                <section class="day">
-                    <h3 Class="day__title">
-                        Formularze
-                    </h3>
-                    <p class="day__paragraph">
-                        Służą do komunikacji ze światem
-                    </p>
-                    <p class="day__paragraph">
-                        <strong>form</strong>- odpowiada za opakowanie
-                    </p>
-                    <p class="day__paragraph">
-                        <strong>input</strong>- odpowiada za wprawadzanie danych
-                    </p>
-                    <p class="day__paragraph">
-                        <strong>for="name"</strong>- nazwa pola - identyfikator pola, coś jak nazwa zmiennej, unikalna nazwa
-                    </p>
-                    <p class="day__paragraph">
-                        <strong>id="idPola"</strong>- używamy do odniesienia się do label for"" - <strong>to samo co w for</strong>
-                    </p>
-                </section>
+            <section class="day">
+                <h3 Class="day__title">
+                    Formularze
+                </h3>
+                <p class="day__paragraph">
+                    Służą do komunikacji ze światem
+                </p>
+                <p class="day__paragraph">
+                    <strong>form</strong>- odpowiada za opakowanie
+                </p>
+                <p class="day__paragraph">
+                    <strong>input</strong>- odpowiada za wprawadzanie danych
+                </p>
+                <p class="day__paragraph">
+                    <strong>name="nazwaPola"</strong>- identyfikator pola, coś jak nazwa zmiennej, unikalna nazwa
+                </p>
+                <p class="day__paragraph">
+                    <strong>id="idPola"</strong>- używamy do odniesienia się do label for"" - <strong>to samo co w
+                        for</strong>
+                </p>
+                <p class="day__paragraph">
+                    <strong>label</strong>- służy do opisywania pola, taka legenda pola
+                </p>
+                <p class="day__paragraph">
+                    <strong>for="idPola"</strong>- nazwa Pola
+                </p>
+                <p class="attention">
+                    Wartość for musi być równa id - służą do komunikacji z backendem
+                </p>
+                <p class="day__paragraph">
+                    Formularze warto opakowaywać w np. p , pomocne w ostyowaniu
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="text"</strong>- podstawowy typ inputa
+                </p>
+                <p class="day__paragraph">
+                    <strong>value="wartość"</strong>- wartość przykładowa, która może być wyświetlana w polu; czasem w
+                    przypadku selectów, chceckboxów jest to wartość ukryta, która zostanie wysłana do serwera (nie
+                    widoczna na stronie) - służy do komunikacji z serwerem
+                </p>
+                <p class="day__paragraph">
+                    <strong>placeholder="tekst podpowiedzi"</strong>- podpowiada co wpisać w formularz (szarą
+                    czcionką)<br>
+                    <strong>Atrybut placeholder nie zastępuje atrybutu label!</strong>
+                </p>
+                <p class="day__paragraph">
+                    <strong>fieldset</strong>- obszar do wyboru opcji (jedna opcja możliwa do wyboru z pośród propozycji
+                    o tym samym <em>name</em>)
+                </p>
+                <p class="day__paragraph">
+                    <strong>legend</strong>- nazwa fieldsetu
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="radio"</strong>- wybór 1 opcji (nazwa pochodzi od przycisków w starych radiach - tylko
+                    jeden mógł być włączony); radio button opisujemy za pomocą <em>name</em>
+                </p>
+                <p class="day__paragraph">
+                    <strong>checked</strong>- zaznacza daną opcję jako domyślą
+                </p>
+                <p class="day__paragraph">
+                    <strong>checkbox</strong>- pozwala na zaznaczanie więcej niż jednej opcji
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="number"</strong>- do liczb
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="tel"</strong>- do numerów telefonów
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="email"</strong>- do emaili
+                </p>
+                <p class="day__paragraph">
+                    Formularze biorą wygląd bezpośrednio z systemu. Mogą się różnić wyglądem między win, mac, lin. Stylowanie ich nie jest łatwe.
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="range"</strong>- wprwadzenie wartości z przedziału (suwak)<br>
+                    input type="range" min="0" max="100" step="10" - wartość minimalny, maksymalna, skok
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="password"</strong>- ukrywa wpisywany tekst - do haseł
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="file"</strong>- okienko do wczytywania plików (1 plik)
+                </p>
+                <p class="day__paragraph">
+                    <strong>select</strong>- okienko do wybierania obcji (rozwija się)
+                </p>
+                <p class="day__paragraph">
+                    <strong>option</strong>- opcja do wyboru w select (automatycznie wybiera się pierwsza opcja)
+                </p>
+                <p class="day__paragraph">
+                    <strong>textarea</strong>- okienko służące do wprowadzania dłuższego tekstu (uwaga wprowadza nawet spacje z VSC - najlepiej od razu zamknąć znacznik; można je skalować na stronie)
+                </p>
+                <p class="day__paragraph">
+                    <strong>type="submit"</strong>- powoduje, że nasz formularz będzie wysłany - przycisk; value="nazwa" - zminia nazwę submita
+                </p>
+                <p class="day__paragraph">
+                    <strong>action="url://z-którym-gadamy"</strong>- odpowiada za to, gdzie dane z formularza zostaną wysłane
+                </p>
+                <p class="day__paragraph">
+                    <strong>action="http://dev.cotenfrontend.pl"</strong>- form checker - podgląd wysłanego formularza
+                </p>
+                <p class="day__paragraph">
+                    <strong>method="get"</strong>- metoda wysyłania formularza; GET - wszystki informacja z formularza spakowane są do nazwy linku, można nawet podejżeć hasło (nie stosować, chyba że trzeba), bardzo długie linki (mają swój limit)
+                </p>
+                <p class="day__paragraph">
+                    <strong>method="post"</strong>- wysyłanych danych nie ma w linku, bezpieczniejsze, zalecane
+                </p>
+                <p class="day__paragraph">
+                    <strong>enctype="application/x-www-firm-urlencoded"</strong>- sposób wysylania formularza; domyślny
+                </p>
+                <p class="day__paragraph">
+                    <strong>enctype="multipart/foarm-data"</strong>- sposób wysylania formularza; używamy kiedy wysyłamy pliki
+                </p>
+                <p class="day__paragraph">
+                    <strong>WALIDACJA</strong>- pozwala na sprawdzenie czy nasz formularz jest poprawnie wypełniony, jeszcze przed wysłaniem; np. czy nie brakuje jakiś informacji
+                </p>
+                <p class="day__paragraph">
+                    <strong>required</strong>- dane pole jest wymagane; formularz nie zostanie wyslany, jeżeli to pole nie zostanie wypełnione
+                </p>
+                <p class="day__paragraph">
+                    <strong>pattern="[a-2A-2O-9]+"</strong>- wyrażenie regularne (regular expression) - wymaga np. użycia wielkiej, małej litery i cyfry; np. nie pozwala wpisywać cyfr<br>
+                    <a class="web-link" href="http://html5pattern.com/Names"> link do strony z gotowymi patternami</a>
+                </p>
+                <p class="attention">
+                    Walidacja po stronie frontendu NIE ZASTĘPUJE walidacji po stronie backendu!
+                </p>
+            </section>
             </header>
         </article>
 
