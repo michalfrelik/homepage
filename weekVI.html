@@ -268,6 +268,53 @@
                 <h3 Class="day__title">
                     CSS: Media Queries
                 </h3>
+                <h4 class="day__subtitle">
+                    RWD - Responsive Web Design (Design responsywny) - dopasowywanie się strody do rozdzielczości
+                </h4>
+                <p class="day__paragraph">
+                    <strong>@media</strong> - steruje tym co ma się zadziać na danej rozdzielczości, danym urządzeniu
+                </p>
+                <p class="day__paragraph">
+                    <strong>@media: (screen - style na wyświetlaczu) (print - style do druku) (all - domyślne) ...</strong>
+                </p>
+				<div class="list">
+					<p class="list__title">media fetures (finkcje):</p>
+					<ul class="list__totality">
+						<li class="list__item list__item--circle">min-width</li>
+						<li class="list__item list__item--circle">max-width</li>
+						<li class="list__item list__item--circle">color</li>
+						<li class="list__item list__item--circle">aspect-ratio - wspłóczynnik wysokości do szerokości</li>
+						<li class="list__item list__item--circle">orientation - orientacja pionowa / pozioma (szczególnie w telefonach)</li>
+					</ul>
+				</div>
+                <p class="day__paragraph">
+                    <strong>and</strong> - dodawanie różnych featerów (@media screen and (max-width) and (min-width))
+                </p>
+                <p class="day__paragraph">
+                    <strong>not</strong> - zaprzeczenie, negacja (odwrócenie logiki)
+                </p>                
+                <p class="day__paragraph">
+                    <strong>,</strong> - działa jak w CSS, dodawanie kolejnych włsaności (@media screen (max-width), print(max-width))
+                </p>
+                <h4 class="day__subtitle">
+                    Breakpoint - określna nam w którym miejscu na naszej stronie ma nastąpić zmiana
+                </h4>
+                <p class="day__paragraph">
+                    np. @media (min-width: 1000px) {.main {max-width:900px}} - od szerokości 1000 px szerokość maina zmieni się na 900px
+                </p>
+                <p class="day__paragraph">
+                    Breakpointy ustala się zazwyczaj jako przejście między normalnym ekranem a telefonem, dużym ekranem itp.
+                </p>
+                <h4 class="day__subtitle">
+                    mobile-first - technika stylowania polegająca na stylowaniu począwszy od wersji mobilnej
+                </h4>
+                <p class="day__paragraph">
+                    mobile, tablet, desktop - główne kategorie urządzeń (różne rozdzielczości)
+                </p>
+                <p class="day__paragraph">
+                    Device toolbar - narzędzie deweloperskie symulujące różne rozdzielczości (mobile, tablet itp)
+                </p>
+
                 <div class="grid__media-queries-test">
                     <section class="day__paragraph">
                         <h4 class="day__subtitle">
