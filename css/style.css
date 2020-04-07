@@ -13,7 +13,7 @@ html {
 
 .main {
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 800px;
     padding-bottom: 50px;
     padding-top: 50px;
     width: 100%;
@@ -363,6 +363,28 @@ html {
     width: 100%;
 }
 
-.form__fieldset{
+.form__fieldset {
     min-width: 200px;
+}
+
+.grid__media-queries-test {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+}
+
+@media screen and (min-width: 850px) and (max-width: 1000px) {
+    .grid__media-queries-test {
+        grid-template-columns: 1fr;
+    }
+    .day__subtitle {
+        color: red;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main {
+        max-width: 900px;
+    }
 }
