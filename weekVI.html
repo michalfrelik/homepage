@@ -102,7 +102,8 @@
                     <strong>type="email"</strong>- do emaili
                 </p>
                 <p class="day__paragraph">
-                    Formularze biorą wygląd bezpośrednio z systemu. Mogą się różnić wyglądem między win, mac, lin. Stylowanie ich nie jest łatwe.
+                    Formularze biorą wygląd bezpośrednio z systemu. Mogą się różnić wyglądem między win, mac, lin.
+                    Stylowanie ich nie jest łatwe.
                 </p>
                 <p class="day__paragraph">
                     <strong>type="range"</strong>- wprwadzenie wartości z przedziału (suwak)<br>
@@ -121,19 +122,24 @@
                     <strong>option</strong>- opcja do wyboru w select (automatycznie wybiera się pierwsza opcja)
                 </p>
                 <p class="day__paragraph">
-                    <strong>textarea</strong>- okienko służące do wprowadzania dłuższego tekstu (uwaga wprowadza nawet spacje z VSC - najlepiej od razu zamknąć znacznik; można je skalować na stronie)
+                    <strong>textarea</strong>- okienko służące do wprowadzania dłuższego tekstu (uwaga wprowadza nawet
+                    spacje z VSC - najlepiej od razu zamknąć znacznik; można je skalować na stronie)
                 </p>
                 <p class="day__paragraph">
-                    <strong>type="submit"</strong>- powoduje, że nasz formularz będzie wysłany - przycisk; value="nazwa" - zminia nazwę submita
+                    <strong>type="submit"</strong>- powoduje, że nasz formularz będzie wysłany - przycisk; value="nazwa"
+                    - zminia nazwę submita
                 </p>
                 <p class="day__paragraph">
-                    <strong>action="url://z-którym-gadamy"</strong>- odpowiada za to, gdzie dane z formularza zostaną wysłane
+                    <strong>action="url://z-którym-gadamy"</strong>- odpowiada za to, gdzie dane z formularza zostaną
+                    wysłane
                 </p>
                 <p class="day__paragraph">
                     <strong>action="http://dev.cotenfrontend.pl"</strong>- form checker - podgląd wysłanego formularza
                 </p>
                 <p class="day__paragraph">
-                    <strong>method="get"</strong>- metoda wysyłania formularza; GET - wszystki informacja z formularza spakowane są do nazwy linku, można nawet podejżeć hasło (nie stosować, chyba że trzeba), bardzo długie linki (mają swój limit)
+                    <strong>method="get"</strong>- metoda wysyłania formularza; GET - wszystki informacja z formularza
+                    spakowane są do nazwy linku, można nawet podejżeć hasło (nie stosować, chyba że trzeba), bardzo
+                    długie linki (mają swój limit)
                 </p>
                 <p class="day__paragraph">
                     <strong>method="post"</strong>- wysyłanych danych nie ma w linku, bezpieczniejsze, zalecane
@@ -142,23 +148,119 @@
                     <strong>enctype="application/x-www-firm-urlencoded"</strong>- sposób wysylania formularza; domyślny
                 </p>
                 <p class="day__paragraph">
-                    <strong>enctype="multipart/foarm-data"</strong>- sposób wysylania formularza; używamy kiedy wysyłamy pliki
+                    <strong>enctype="multipart/foarm-data"</strong>- sposób wysylania formularza; używamy kiedy wysyłamy
+                    pliki
                 </p>
                 <p class="day__paragraph">
-                    <strong>WALIDACJA</strong>- pozwala na sprawdzenie czy nasz formularz jest poprawnie wypełniony, jeszcze przed wysłaniem; np. czy nie brakuje jakiś informacji
+                    <strong>WALIDACJA</strong>- pozwala na sprawdzenie czy nasz formularz jest poprawnie wypełniony,
+                    jeszcze przed wysłaniem; np. czy nie brakuje jakiś informacji
                 </p>
                 <p class="day__paragraph">
-                    <strong>required</strong>- dane pole jest wymagane; formularz nie zostanie wyslany, jeżeli to pole nie zostanie wypełnione
+                    <strong>required</strong>- dane pole jest wymagane; formularz nie zostanie wyslany, jeżeli to pole
+                    nie zostanie wypełnione
                 </p>
                 <p class="day__paragraph">
-                    <strong>pattern="[a-2A-2O-9]+"</strong>- wyrażenie regularne (regular expression) - wymaga np. użycia wielkiej, małej litery i cyfry; np. nie pozwala wpisywać cyfr<br>
+                    <strong>pattern="[a-2A-2O-9]+"</strong>- wyrażenie regularne (regular expression) - wymaga np.
+                    użycia wielkiej, małej litery i cyfry; np. nie pozwala wpisywać cyfr<br>
                     <a class="web-link" href="http://html5pattern.com/Names"> link do strony z gotowymi patternami</a>
                 </p>
                 <p class="attention">
                     Walidacja po stronie frontendu NIE ZASTĘPUJE walidacji po stronie backendu!
                 </p>
             </section>
-            </header>
+            <section class="day">
+                <h3 Class="day__title">
+                    GRID
+                </h3>
+                <h4 class="day__subtitle">
+                    Po co ten grid?
+                </h4>
+                <p class="day__paragraph">
+                    Potrzeba stworzenia prostego systemu do budowania layoutów (tabele, floaty, div-oza itp. nie
+                    spełniały oczekiwań i były kiepską praktyką)<br>
+                    Przyjazny zapis i możliwość łatwej edycji w kontekście responsywności.<br>
+                    Standard dopasowany do aktualnego stany stron internetowych.
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid - line</strong> - linie oddzielające pola (zaczynają się od 1 nie od 0)
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid - cell</strong> - komórka
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid - track (row / column)</strong> - wiersz / kolumna
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid - area</strong> - mówi nam w jakich obszrach i na jakich komórkach nasz element się
+                    znajduje
+                </p>
+                <div class="img__position">
+                    <img class="img__grid" src="img/grid.JPG" alt="Schemat GRID-a">
+                </div>
+                <p class="day__paragraph">
+                    <strong>grid - container</strong> - "pudełko" które tworzy nam layout
+                </p>
+                <p class="day__paragraph">
+                    <strong>display: grid</strong> - komenda przywołująca grida
+                </p>
+                <p class="day__paragraph">
+                    Przerywane linie w przeglądarce mówią nam, że mamy do czynienia z gridem
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-template-columns: (wartość po spacji)</strong> - mówi nam ile kolumn i jakiej
+                    szerokości chcemy stworzyć (definiujeliczbę kolumn i ich szerokość)
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-template-rows: (wartość po spacji)</strong> - mówi nam ile wierszy i jakiej szerokości
+                    chcemy stworzyć (definiujeliczbę kolumn i ich szerokość)
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-template-rows: [pierwsza] 1fr [ostatnia] 1fr</strong> - [] - można nazwać poszczególne kolumny
+                </p>
+                <h4 class="day__subtitle">
+                    Jednostka: fr - mówi nam, że jest to ułamek wolnej przestrzeni, np. mamy 3 elementy, to każdy zajmie
+                    1/3 wolnej przestrzeni (1fr 1fr 1fr)
+                </h4>
+                <p class="day__paragraph">
+                    <strong>repeat (ileRazy, wartość)</strong> - funkcja powtarzające np.<br>
+                    grid-template-rows: repeat (4, 1fr)
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-column(row)gap: (rozmiar odstępu)</strong> - rozmiar odstępu między kolumnami
+                </p>
+                <p class="day__paragraph">
+                    <strong>minmax(minWartość, maxWartość)</strong> - minimalna i maksymalna wielkość elementu
+                </p>
+                <div class="img__position">
+                    <img class="img__grid" src="img/grid-teamplate-areas.JPG" alt="Grid teamplate areas">
+                </div>
+                <p class="day__paragraph">
+                    <strong>grid-teamplate-areas: "header header header"<br>
+                        "content . name"<br>
+                        "footer footer footer"</strong> - tworzy layout (ile ma mieć kolum itp.)
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid: item</strong>
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-area: (nazwa obszaru np. header) (row-start / col-start / row-end / col-end - skrócony zapis)</strong>
+                </p>
+                <p class="day__paragraph">
+                    <strong>grid-row(column)-start(end): (numer lini - rys. przykładowy) ([nazwa] - np. [pierwsza]) (span 3 - zajmuje obszar 3 kolumn/wierszy)</strong>
+                </p>
+                <p class="day__paragraph">
+                    <strong>z-index</strong> - funkcjonuje normalnie do pozycjonowania warstw
+                </p>
+                <p class="day__paragraph">
+                    Grid to nie tetris - wszystko zamyka się w regularnych prostokątach
+                </p>
+                <p class="attention">
+                    Grid nie zastępuje flexboxa (super się uzupełniają)
+                </p>
+                <p class="day__paragraph">
+                    Najlepiej gridem tworzyć ogólny layout, a flexboxem pozycjonować
+                </p>
+            </section>
         </article>
 
     </main>

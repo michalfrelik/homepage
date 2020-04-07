@@ -81,10 +81,14 @@ html {
     border-radius: 30px;
     height: 100%;
     margin: 10px auto;
-    max-width: 480px;
-    min-height: 100px;
+    max-width: 420px;
     padding: 10px;
     width: 100%;
+}
+
+.homepage__form-height {
+    margin:0;
+    padding: 10px;
 }
 
 .homepage__form--text {
@@ -294,31 +298,24 @@ html {
     width: 160px;
 }
 
-.img-korsan {
-    margin: 0;
-}
-
-.img-korsan__picture {
+.img__korsan-lorem {
     border: 2px solid #00487c;
     border-radius: 50%;
-    margin: 16px 16px 16px 50px;
+    margin: 0 0 10px 0;
     max-width: 200px;
     overflow: hidden;
     width: 100%;
 }
 
-.img-korsan__signature {
+.img__korsan-lorem-signature {
     color: grey;
+    display: flex;
     font-size: 12px;
-    margin-left: 70px;
+    justify-content: center;
+    margin: 0;
 }
 
-.img-box-model {
-    margin: 10px auto;
-    width: 100%;
-}
-
-.img-box-model__korsan {
+.img__box-model-korsan {
     border: 2px solid #00487c;
     float: left;
     margin: 15px;
@@ -326,10 +323,14 @@ html {
     width: 100%;
 }
 
-.img-bem {
-    margin: 0 auto;
+.img__bem, .img__box-model {
     max-width: 800px;
     width: 100%;
+}
+
+.img__position {
+    display: flex;
+    justify-content: center;
 }
 
 .table {
