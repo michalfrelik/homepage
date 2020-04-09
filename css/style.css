@@ -103,7 +103,7 @@ html {
     text-transform: uppercase;
 }
 
-.homepage__header {
+.header {
     padding: 10px;
     background-image: url(../img/11698.png);
     border: 3px solid #00487c;
@@ -114,12 +114,16 @@ html {
     width: 100%;
 }
 
-.homepage__header-title {
+.header__title{
     color: whitesmoke;
     font-size: 48px;
     margin: 0;
     text-align: center;
     text-transform: uppercase;
+}
+
+.homepage {
+    margin: 0;
 }
 
 .homepage__link {

@@ -11,3 +11,13 @@ const welcome = (name, age) => {
 
 welcome(name, age);
 welcome('Michał Ferlik', 26);
+
+const button = document.querySelector('.header__button--js');
+console.log(button);
+
+
+button.addEventListener('click', (e) => {
+    const header = document.querySelector('.header__title--js')
+    header.innerHTML = '!! Pierwszy button !!';
+    alert ('UWAGA');
+});
