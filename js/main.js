@@ -19,5 +19,22 @@ console.log(button);
 button.addEventListener('click', (e) => {
     const header = document.querySelector('.header__title--js')
     header.innerHTML = '!! Pierwszy button !!';
-    alert ('UWAGA');
+    header.classList.toggle('header__title--red');
+    if (header.classList.contains('header__title--red')) {
+        console.log('jest klasa');
+    } else {
+        console.log('brak klasy');
+    }
 });
+
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+
+navigationSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+    navigationSwitcher.innerHTML = 'XXX';
+})
+
+
+
+
