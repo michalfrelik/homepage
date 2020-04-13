@@ -6,7 +6,7 @@ console.log(age);
 console.log(`Nazywam się ${name} i mam ${age}  lat`);
 
 const welcome = (name, age) => {
-    console.log(`Witaj ${name}, masz ${age} lat!`)
+    console.log(`Witaj ${name}, masz ${age} lat!`);
 };
 
 welcome(name, age);
@@ -15,6 +15,15 @@ welcome('Michał Ferlik', 26);
 const button = document.querySelector('.header__button--js');
 console.log(button);
 
+
+
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+
+navigationSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+    navigationSwitcher.innerHTML = 'XXX';
+});
 
 button.addEventListener('click', (e) => {
     const header = document.querySelector('.header__title--js')
@@ -26,15 +35,6 @@ button.addEventListener('click', (e) => {
         console.log('brak klasy');
     }
 });
-
-const navigationSwitcher = document.querySelector('.navigation__switcher--js');
-
-navigationSwitcher.addEventListener('click', (e) => {
-    const navigationList = document.querySelector('.navigation__list--js');
-    navigationList.classList.toggle('navigation__list--visible');
-    navigationSwitcher.innerHTML = 'XXX';
-})
-
 
 
 
