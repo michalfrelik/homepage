@@ -52,7 +52,7 @@ html {
 }
 
 
-.navigation__list--grid{
+.navigation__list--grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     line-height: 32px;
@@ -401,6 +401,7 @@ html {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10%;
+    margin-bottom: 80px;
 }
 
 @media screen and (min-width: 850px) and (max-width: 1000px) {
