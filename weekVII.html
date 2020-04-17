@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="../Homepage/css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="../Homepage/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body id="up">
+  <header class="site-header">
+    <nav class="navigation">
+      <button class="navigation__switcher navigation__switcher--js" aria-label="Otwórz menu">menu</button>
+      <div class="navigation__list--weeks navigation__list--js">
+        <ul class="navigation__list--grid">
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekI.html">Tydzień I</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekII.html">Tydzień II</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIII.html">Tydzień III</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIV.html">Tydzień IV</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekV.html">Tydzień V</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVI.html">Tydzień VI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVII.html">Tydzień VII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekVIII.html">Tydzień VIII</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekIX.html">Tydzień IX</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekX.html">Tydzień X</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXI.html">Tydzień XI</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="weekXII.html">Tydzień XII</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a class="navigation__link" href="index.html">Strona główna</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="weekVI.html">Poprzedni tydzień</a>
+        </li>
+        <li class="navigation__item">
+          <a class="navigation__link" href="weekVIII.html">Następny tydzień</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <article class="article">
+      <header class="article__header">
+        <h2 class="article__title">
+          Tydzień VI
+        </h2>
+      </header>
+      <section class="day">
+        <h3 Class="day__title">
+          JS: obiekty, obiekty
+        </h3>
+        <p class="day__paragraph">
+          Prawie wszystko w JS jest obiektrm*<br>
+          * - nawet typy proste, mimo iż nie są obiektami, to tak się zachowują
+        </p>
+        <p class="day__paragraph">
+          Zmienn -> const / let<br>
+          funkcje ()->{}
+        </p>
+        <p class="day__paragraph">
+          <strong>Obiekt jest strukturą danych {}</strong>
+        </p>
+        <p class="day__paragraph">
+          Przykładowy obiekt: Gwiazda śmierci
+        </p>
+        <div class="img__position">
+          <img src="img/gwiazda-śmierci.JPG" alt="Przykładowy obiekt: Gwiazda Śmierci" class="img__dethStar">
+        </div>
+        <p class="day__paragraph">
+          Nasz świat jest obiektowy -> przenosimy świat rzeczywisty na świat programistyczny
+        </p>
+        <p class="day__paragraph">
+          key: value<br>
+          klucz: wartość<br>
+          klucz - unikalny w ramach obiektu<br>
+          wartość - prymitywy / funkcje / zagnieżdżenia
+        </p>
+        <p class="attention">
+          Zmienne w obiektach nazywywamy -> własnościami (properties)
+        </p>
+        <p class="attention">
+          funkcje w obiektach nazywamy -> metody (methods)
+        </p>
+        <p class="attention">
+          Poza obiektami dalej nazywamy je zmiennymi i&nbspfunkcjami - odróżnienie
+        </p>
+        <p class="day__paragraph">
+          . - dot notation - notacja kropkowa<br>
+          np. console.log(dethStar.name)<br>
+          zwróci nam nazwę - dethStar
+        </p>
+        <p class="day__paragraph">
+          dethStar.name = 'Gwiazda śmierci<br>
+          console.log(dethStar.name)<br>
+          zwróci nam nazwę - Gwiazda śmierci - pozwala na zmianę wartości properties
+        </p>
+        <p class="day__paragraph">
+          [] - bracket notation - działa tak samo jak dot notation z tą różnicą, że można tam przywoływać properties ze
+          spacją (jest to niepolecane, lepiej zapisywać camelCasem, ale czasem nieuniknione)<br>
+          dethStar["population living"] = 0 - doda nam nową własność (property)
+        </p>
+        <p class="day__paragraph">
+          <strong>JSON - JavaScript Obcjet Notation</strong><br>
+          Jest to obiekt javascriptowy, zapisany w specjalny sposób i jest on przesyłany np. pomiędzy serwerem, a naszą
+          aplikacją frontendową. Jest to uniwersalny format danych, niezależny od języka, może być wysyłany z backendu.
+          JSON nie jest przypisany do żadnej zmiennej, musimy go przypisać<br>
+          JSON - nie może posiadać funkcji; wszystko jest zapisane double casem ""
+        </p>
+        <div class="json">
+          {<br>
+          "diameter": "120000",<br>
+          "isOperationf": "true",<br>
+          "levels": "357",<br>
+          "name": "'Deth Star'",<br>
+          "population": "10000",<br>
+          "crew": {<br>
+            "function": "capitain"<br>
+            "name": "EL capitain"<br>
+          }<br>
+          }<br><br>
+          <strong>NALEŻY ZMIENIĆ FORMAT NA JSON!</strong>
+        </div>
+      </section>
+      <section class="day">
+        <h3 Class="day__title">
+          JS: obiekty, obiekty
+        </h3>
+      </section>
+    </article>
+
+  </main>
+
+  <footer class="footer">
+    <a class="footer__link" href="#up">Wróc do góry</a>
+    <p class="footer__paragraph">Strona domowa Michała Frelika - nauka front endu!</p>
+  </footer>
+
+  <script src="../Homepage/js/main.js"> </script>
+
+</body>
+
+</html>

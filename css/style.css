@@ -354,7 +354,7 @@ html {
     width: 100%;
 }
 
-.img__bem, .img__box-model {
+.img__bem, .img__box-model, .img__dethStar {
     max-width: 800px;
     width: 100%;
 }
@@ -442,6 +442,12 @@ html {
 
 .grid-week2__menu {
     grid-area: menu;
+}
+
+.json {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap
 }
 
 @media (max-width: 600px) {
