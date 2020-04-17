@@ -71,7 +71,7 @@
     <article class="article">
       <header class="article__header">
         <h2 class="article__title">
-          Tydzień VI
+          Tydzień VII
         </h2>
       </header>
       <section class="day">
@@ -152,8 +152,40 @@
       </section>
       <section class="day">
         <h3 Class="day__title">
-          JS: obiekty, obiekty
+          Peudoelementy & Peudoselektory
         </h3>
+        <h4 class="day__subtitle">
+          Pseudoelementy (podwójny dwukropek ::) - tworzy elementy stylujące
+        </h4>
+        <p class="day__paragraph">
+          CSS może wpłynwać na treść
+        </p>
+        <p class="day__paragraph">
+          content: ""
+        </p>
+        <p class="day__paragraph">
+          element::before<br>
+          treść elementu<br>
+          element::after
+        </p>
+        <p class="day__paragraph">
+          <strong>Istotne</strong> - w beforze i afterze nie wrzucamy nic istotnego co może być przeczytane przez czytniki, nic co ma znaczenie pod kątekm treści, tylko rzeczy, elementy wpływające na wygląd
+        </p>
+        <h4 class="day__subtitle">
+          Pseudoklasy (pojedynczy dwukropek :) - służy do określania stanu elementu
+        </h4>
+        <p class="day__paragraph">
+          selektor: hover - zmienia klasę, np. kolor, po najechaniu myszką<br>
+          visited - odwiedzona strona zmienia kolor, własnoąć<br>
+          focus - do formularzy, klasa aktywuje się po wejściu w dane pole
+        </p>
+        <p class="day__paragraph">
+          selektor: first-child / last-child / ... - zmienia klasę pierwszego / ostatniego elementu (element musi być pierwszy / ostatni w rodzinie - nie może być przed / po nawet zupełnie innego elementu)
+        </p>
+        <p class="day__paragraph">
+          selektor: not(selektor)<br>
+          klasa: not(klasa--specjalna) - wszystkie elementy z daną klasą prócz klasy specjalnej dostaną daną własność
+        </p>
       </section>
     </article>
 

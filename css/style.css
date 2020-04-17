@@ -41,6 +41,14 @@ html {
     text-decoration: none;
 }
 
+.navigation__link:visited {
+    color: darkslateblue;
+}
+
+.navigation__link:hover {
+    color: darkred;
+}
+
 .navigation__list {
     align-items: center;
     display: flex;
@@ -113,6 +121,10 @@ html {
     max-width: 420px;
     padding: 10px;
     width: 100%;
+}
+
+.homepage__form:hover {
+    background: black;
 }
 
 .homepage__form-height {
@@ -224,10 +236,36 @@ html {
 }
 
 .day__subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
-    padding: 15px 0 15px 30px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.day__subtitle::before {
+    content: "";
+    display: inline-block;
+    background: yellow;
+    width: 24px;
+    height: 24px;
+    border: solid 2px grey;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.day__subtitle::after {
+    content: "";
+    display: inline-block;
+    background: rgb(145, 36, 155);
+    width: 24px;
+    height: 24px;
+    border: solid 2px grey;
+    border-radius: 50%;
+    margin-left: 5px;
 }
 
 .day__title {
@@ -391,6 +429,10 @@ html {
     display: flex;
     flex-flow: column;
     width: 100%;
+}
+
+.form__window:focus {
+    border: 3px red solid;
 }
 
 .form__fieldset {
