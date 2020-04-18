@@ -47,6 +47,7 @@ html {
 
 .navigation__link:hover {
     color: darkred;
+    font-weight: bold;
 }
 
 .navigation__list {
@@ -422,6 +423,15 @@ html {
 .web-link {
     text-decoration: none;
     color: #00487c;
+}
+
+.web-link:visited {
+    color: darkslateblue;
+}
+
+.web-link:hover {
+    color: darkred;
+    font-weight: bold;
 }
 
 .form {

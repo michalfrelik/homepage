@@ -68,16 +68,18 @@
 	</header>
 
 	<main class="main">
-		<article class="article">
+		<section class="article">
 			<header class="article__header">
 				<h2 class="article__title">
 					Tydzień VI
 				</h2>
 			</header>
-			<section class="day">
+			<article class="day">
+				<header>
 				<h3 Class="day__title">
 					Formularze
 				</h3>
+			</header>
 				<p class="day__paragraph">
 					Służą do komunikacji ze światem
 				</p>
@@ -211,11 +213,13 @@
 				<p class="attention">
 					Walidacja po stronie frontendu NIE ZASTĘPUJE walidacji po stronie backendu!
 				</p>
-			</section>
-			<section class="day">
+			</article>
+			<article class="day">
+				<header>
 				<h3 Class="day__title">
 					GRID
 				</h3>
+			</header>
 				<h4 class="day__subtitle">
 					Po co ten grid?
 				</h4>
@@ -307,11 +311,13 @@
 				<p class="day__paragraph">
 					Najlepiej gridem tworzyć ogólny layout, a flexboxem pozycjonować
 				</p>
-			</section>
-			<section class="day">
+			</article>
+			<article class="day">
+				<header>
 				<h3 Class="day__title">
 					CSS: Media Queries
 				</h3>
+			</header>
 				<h4 class="day__subtitle">
 					RWD - Responsive Web Design (Design responsywny) - dopasowywanie się strody do rozdzielczości
 				</h4>
@@ -363,7 +369,7 @@
 				</p>
 
 				<div class="grid__media-queries-test">
-					<section class="day__paragraph">
+					<article class="day__paragraph">
 						<h4 class="day__subtitle">
 							TEST
 						</h4>
@@ -375,8 +381,8 @@
 							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
 							quasi, eligendi aut architecto.lorem
 						</p>
-					</section>
-					<section class="day__paragraph">
+					</article>
+					<article class="day__paragraph">
 						<h4 class="day__subtitle">
 							TEST
 						</h4>
@@ -388,8 +394,8 @@
 							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
 							quasi, eligendi aut architecto.lorem
 						</p>
-					</section>
-					<section class="day__paragraph">
+					</article>
+					<article class="day__paragraph">
 						<h4 class="day__subtitle">
 							TEST
 						</h4>
@@ -401,8 +407,8 @@
 							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
 							quasi, eligendi aut architecto.lorem
 						</p>
-					</section>
-					<section class="day__paragraph">
+					</article>
+					<article class="day__paragraph">
 						<h4 class="day__subtitle">
 							TEST
 						</h4>
@@ -414,13 +420,15 @@
 							totam quaerat quia delectus velit nam optio. Fugiat tempora numquam atque libero modi autem
 							quasi, eligendi aut architecto.lorem
 						</p>
-					</section>
+					</article>
 				</div>
-			</section>
-			<section class="day">
+			</article>
+			<article class="day">
+				<header>
 				<h3 Class="day__title">
 					JS: Eventy
 				</h3>
+			</header>
 				<p class="list__title">
 					Przepis na przyciksk zmieniający nagłówek
 				</p>
@@ -454,11 +462,13 @@
 						<strong>e = Event</strong> - w devtoolsach mamy dużo różnych parametrów w tym odniesienie do naszego buttona - target - strona <a class="web-link" href="https://developer.mozilla.org/en-US/docs/Web/API/Event">developer.mozilla</a><br>
 						console.log(e.target)
 					</p>
-			</section>
-			<section class="day grid-week2">
-				<h3 Class="day__title grid-week2__header">
+			</article>
+			<article class="day grid-week2">
+				<header Class="grid-week2__header">
+				<h3 class="day__title">
 					Hamburger menu + test grid - layout
 				</h3>
+			</header>
 				<div class="grid-week2__content">
 				<p class="list__title">
 					Przepis na Hamburger menu
@@ -482,48 +492,50 @@
 				<nav class="grid-week2__menu">
 					<ul class="grid-week2__list">
 					<li>
-						<a class="grid-week2__link" href="weekI.html">Tydzień I</a>
+						<a class="grid-week2__link navigation__link" href="weekI.html">Tydzień I</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekII.html">Tydzień II</a>
+						<a class="grid-week2__link navigation__link" href="weekII.html">Tydzień II</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekIII.html">Tydzień III</a>
+						<a class="grid-week2__link navigation__link" href="weekIII.html">Tydzień III</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekIV.html">Tydzień IV</a>
+						<a class="grid-week2__link navigation__link" href="weekIV.html">Tydzień IV</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekV.html">Tydzień V</a>
+						<a class="grid-week2__link navigation__link" href="weekV.html">Tydzień V</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień VI</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VI</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień VII</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VII</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień VIII</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień VIII</a>
 					</li>
 					<li>
-						<a class="navigation__link" href="weekVI.html">Tydzień IX</a>
+						<a class="navigation__link navigation__link" href="weekVI.html">Tydzień IX</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień X</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień X</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień XI</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień XI</a>
 					</li>
 					<li>
-						<a class="grid-week2__link" href="weekVI.html">Tydzień XII</a>
+						<a class="grid-week2__link navigation__link" href="weekVI.html">Tydzień XII</a>
 					</li>
 				</ul>
 				</nav>
-			</section>
-			<section class="day">
+			</article>
+			<article class="day">
+				<header>
 				<h3 Class="day__title">
 					GitHub Pages: statyczny hosting
 				</h3>
+			</header>
 				<p class="day__paragraph">
 					Publikacja naszej strony na GitHub Pages
 				</p>
@@ -538,8 +550,8 @@
 					Należy nazwać repozytorium::<br>
 					nazwaUsera.github.io
 				</p>
-			</section>
-		</article>
+			</article>
+		</section>
 
 	</main>
 
