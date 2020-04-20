@@ -68,18 +68,18 @@
   </header>
 
   <main class="main">
-    <section class="article">
+    <section class="section">
       <header class="article__header">
-        <h2 class="article__title">
+        <h2 class="section__title">
           Tydzień VII
         </h2>
       </header>
       <article class="day">
         <header>
           <h3 Class="day__title">
-          JS: obiekty, obiekty
-        </h3>
-      </header>
+            JS: obiekty, obiekty
+          </h3>
+        </header>
         <p class="day__paragraph">
           Prawie wszystko w JS jest obiektrm*<br>
           * - nawet typy proste, mimo iż nie są obiektami, to tak się zachowują
@@ -145,8 +145,8 @@
           "name": "'Deth Star'",<br>
           "population": "10000",<br>
           "crew": {<br>
-            "function": "capitain"<br>
-            "name": "EL capitain"<br>
+          "function": "capitain"<br>
+          "name": "EL capitain"<br>
           }<br>
           }<br><br>
           <strong>NALEŻY ZMIENIĆ FORMAT NA JSON!</strong>
@@ -154,10 +154,10 @@
       </article>
       <article class="day">
         <header>
-        <h3 Class="day__title">
-          Peudoelementy & Peudoselektory
-        </h3>
-      </header>
+          <h3 Class="day__title">
+            Peudoelementy & Peudoselektory
+          </h3>
+        </header>
         <h4 class="day__subtitle">
           Pseudoelementy (podwójny dwukropek ::) - tworzy elementy stylujące
         </h4>
@@ -173,7 +173,8 @@
           element::after
         </p>
         <p class="day__paragraph">
-          <strong>Istotne</strong> - w beforze i afterze nie wrzucamy nic istotnego co może być przeczytane przez czytniki, nic co ma znaczenie pod kątekm treści, tylko rzeczy, elementy wpływające na wygląd
+          <strong>Istotne</strong> - w beforze i afterze nie wrzucamy nic istotnego co może być przeczytane przez
+          czytniki, nic co ma znaczenie pod kątekm treści, tylko rzeczy, elementy wpływające na wygląd
         </p>
         <h4 class="day__subtitle">
           Pseudoklasy (pojedynczy dwukropek :) - służy do określania stanu elementu
@@ -184,15 +185,221 @@
           focus - do formularzy, klasa aktywuje się po wejściu w dane pole
         </p>
         <p class="day__paragraph">
-          selektor: first-child / last-child / ... - zmienia klasę pierwszego / ostatniego elementu (element musi być pierwszy / ostatni w rodzinie - nie może być przed / po nawet zupełnie innego elementu)
+          selektor: first-child / last-child / ... - zmienia klasę pierwszego / ostatniego elementu (element musi być
+          pierwszy / ostatni w rodzinie - nie może być przed / po nawet zupełnie innego elementu)
         </p>
         <p class="day__paragraph">
           selektor: not(selektor)<br>
           klasa: not(klasa--specjalna) - wszystkie elementy z daną klasą prócz klasy specjalnej dostaną daną własność
         </p>
         <p class="day__paragraph">
-          Pseudo klasy - <a class="web-link" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">developer mozilla</a>
+          Pseudo klasy - <a class="web-link"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">developer mozilla</a>
         </p>
+      </article>
+      <article class="day">
+        <header>
+          <h3 Class="day__title">
+            SASS
+          </h3>
+        </header>
+        <p class="list__title">Problemy z CSS</p>
+        <ul class="list__totality">
+          <li class="list__item">porozrzucane klasy (bałagan w plikach)</li>
+          <li class="list__item">@media oddzielone od elementu (konieczność ponownego definiowania)</li>
+          <li class="list__item">kiepska czytelność plików (szczególnie przy zagnieżdżeniach)</li>
+          <li class="list__item">brak możliwości definiowania funkcji do robienia podobnych rzeczy</li>
+        </ul>
+        <p class="day__paragraph">
+          <strong>SASS to preprocesor CSS</strong> - zamienia swoją składnię, swój kod na CSS-a, który jest rozumiany
+          przez przeglądarkę -> <a class="web-link" href="https://sass-lang.com/documentation">SASS</a>
+        </p>
+        <p class="attention">
+          SASS potrzebuje narzędzia do działania
+        </p>
+        <p class="day__paragraph">
+          SASS vs SCSS - są to 2 różne składnie<br>
+          SASS - jest narzędziem, ma swoją składnię i ma składnię SCSS-ową (składnie podobna do pythona)<br>
+          SCSS - składnia prostsza i bardziej czytelna
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          <strong>.scss (dla programisty) --> (SASS - narzędzie) --> .css (dla przeglądarki)</strong>
+        </p>
+        <p class="day__paragraph">
+          .scss - piszemy w tych plikach - narzędzie SASS zamienia je na pliki CSS - zrozumiałe dla przeglądarki
+        </p>
+        <h4 class="day__subtitle">
+          <a class="web-link" href="https://www.sassmeister.com/">SASSMEISTER.COM</a> - strona do ćwiczeń
+        </h4>
+        <p class="day__paragraph">
+          Wszystko czego możemy używać w CSS-sie możemy używać w SASS-sie
+        </p>
+        <h4 class="day__subtitle">Co nam daje SASS?</h4>
+        <p class="day__paragraph">
+          <strong>$zmienna</strong><br>
+          <strong>@mixin</strong> - definiuje jakieś własności<br>
+          <strong>@include</strong> - wstawia tego @mixina (te własności) np.
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          @mixin borderBackground {<br>
+          border-radious: 10 px;<br>
+          background: ping;<br>
+          }<br>
+          .main {<br>
+          @include borderBackground<br>
+          }
+        </p>
+        <p class="day__paragraph">
+          Mixin może przyjmować parametry - <strong>$zmienne</strong> - które możemy zdefiniować w jdenym miejscu
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          @mixin borderBackgroundParameter ($radius, $background) {<br>
+          border-radius: $radius;<br>
+          background: $background;<br>
+          }<br>
+          .main {<br>
+          @include borderBackgroundParameter (20px , red);<br>
+          } - możemy definiować bezpośrednio przy elemncie
+        </p>
+        <p class="day__paragraph">
+          <strong>@extend</strong> - dopisuje klasy na górze (te same własności, różne klasy)
+        </p>
+        <p class="day__paragraph day__paragraph--center">
+          .font-style {<br>
+          font-size: 13px;<br>
+          colorr: green<br>
+          }<br>
+          .main {<br>
+          @extend.font-style;<br>
+          } -> spowoduje wyrzucenie do góry tych samych wartości CSS-owych w klasach
+        </p>
+        <p class="day__paragraph">
+          @mixin + @include - dopisuje własności do każdej klasy; SASS nie wrzuca pustych klas (większy porządek - BEM)
+        </p>
+        <p class="day__paragraph">
+          <strong>& parent selector</strong> - skraca zapis!
+        </p>
+        <div class="parent-selector">
+          <p class="day__paragraph">
+            .about {<br>
+            color: red;<br>
+            &__title {<br>
+            font-size: 18px;<br>
+            &--smaller {<br>
+            font-size: 16px;<br>
+            }<br>
+            }<br>
+            }
+          </p>
+          <p class="day__paragraph">
+            .about {<br>
+            color: red;<br>
+            }<br>
+            .about__title {<br>
+            font-size: 18px;<br>
+            }<br>
+            .about__title--smaller {<br>
+            font-size: 16px;<br>
+            }
+          </p>
+        </div>
+        <p class="attention">
+          Kiedy kożystamy z preprocesowrów NIE EDYTUJEMY plików wynikowych .css !
+        </p>
+        <article class="day">
+          <header>
+            <h3 Class="day__title">
+              Node.js & NPM
+            </h3>
+          </header>
+          <h4 class="day__subtitle">
+             <a class="web-link" href="https://nodejs.org/en/"> Node.js </a> Instalacja, wybieramy wersję starszą (stabilniejsza)
+          </h4>
+          <p class="day__paragraph">
+            Node.js utuchamiamy z terminala, komenda - node -v - sprawdza czy się zainstalował i pokazuję jaka jest wersja
+          </p>
+          <p class="day__paragraph">
+            Node.js to taki javascript uruchamianay poza przeglądarkąm, uruchamia się w systemie np. za pomocą terminala.<br>
+            Node.js jest to środowisko, w którym piszemy za pomocą JS i możemy pisać aplikacje poza przeglądarką
+          </p>
+          <p class="day__paragraph">
+            Node.js nie ma dostępu do DOM
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            Uruchomienie pliku - node script.js
+          </p>
+          <h4 class="day__subtitle">
+             <a class="web-link" href="https://www.npmjs.com/"> NPM </a> nie jest tłumaczone jako node package manager (chociaż nim jest - jest to narzędzie)
+          </h4>
+          <p class="day__paragraph">
+            Jest to taka wyszukiwarka / repozytorium z pakietami, które możemy ściągać do naszego projektu i ich używać
+          </p>
+          <p class="list__title">
+            Po co nam te paczki?
+          </p>
+          <ul class="list__totality">
+            <li class="list__item">dodajemy do projektów sporo gotowych bibliotek / narzędzi</li>
+            <li class="list__item">nie można polegać na konfuguracji edytora / jego wtyczkach (każdy może mieć inne wtyczki zainstalowane lub ich nie chcieć</li>
+            <li class="list__item">uniwersalne źródło ze wszystkimi narzędziami</li>
+            <li class="list__item">dostęp do aktualizacji</li>
+          </ul>
+          <p class="day__paragraph">
+            npm to taki appstore / sklep play dla frontendowca<br>
+            npm to taka skrzynka z narzędziami, których możemy użyć w naszym projekcie
+          </p>
+          <p class="day__paragraph">
+            <strong>npm init</strong> - jest to polecenie, które używamy tylko raz podczas zakładania świerzego projektu, podczas tworzenia możemy nadać mu nazwę itp
+          </p>
+          <p class="day__paragraph">
+            <strong>npm init -y</strong> - pomija pytania i tworzy od razu gotowy plik z wartościami domyślnymi
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            <strong>npm init -y i npm init</strong> - tworzą nam <strong>JSON-a</strong> o nazwie <strong>package.json</strong>
+          </p>
+          <p class="day__paragraph">
+            Przykładowa bilbioteka: <a class="web-link" href="https://momentjs.com/"> moment.js </a> - biblioteka, która formatuje czas
+          </p>
+          <p class="day__paragraph">
+            <strong>node_modules</strong> - jest to katalog, w którym znajdusą się paczki tzw. moduły (ten katalog szybko potrafi przybierać na wadze), tego katalogu <strong>nie edytujemy</strong>
+          </p>
+          <p class="day__paragraph day__paragraph--center">
+            Przywołanie komedy z biblioteki: <br>
+            const moment = requier ('moment')<br>
+            console.log(moment().format('MMMM Di YYYY, h:mm:ss: a'))<br> - komenda wykorzystująca bibliotekę moment, komendy dostępne na stronie biblioteki <a class="web-link" href="https://momentjs.com/"> moment.js </a>
+          </p>
+          <p class="attention">
+            Nie commitujemy katalogu node_modules !
+          </p>
+          <p class="day__paragraph">
+            Każdy może zrobić <strong>npm install</strong> i sobie ściągnąć wykorzystywane w projekcie paczki i w konkretnej wersji
+          </p>
+          <p class="day__paragraph">
+            Informacje o tym co jest (jakie paczki) wykorzystywane w projekcie znajduje się w pliku <strong>package.json -> dependencies</strong>
+          </p>
+          <p class="day__paragraph">
+            <strong>package-lock.json</strong> - jest to plik, który <strong>commitujemy</strong>, pozwala nam na zablokowanie wersji paczki, pilnuje czy wersja jest odpowiednia itp. Tefo pliku <strong>nie edytujemy</strong>. Zwiększa on bezpieczeństwo w naszym projekcie - instalowana będzie dokładnie ta wersja paczki, którą użyliśmy tworząc projekt, nie ma możliwości, że wyjdzie nowa wersja, zastąpi użytą i coś przestanie działać
+          </p>
+          <p class="attention">
+            package.json można edytować i commitować<br>
+            package-lock.json nie można edytować ale commitujemy
+          </p>
+          <h4 class="day__subtitle">
+            GIT
+          </h4>
+          <p class="day__paragraph">
+            <strong>mkdir</strong> - stworzenie nowego folderu z poziomu terminala
+          </p>
+          <p class="day__paragraph">
+            <strong>.gitignore</strong> - tworzymy w naszym projekcie nowy plik - <strong>.gitignore</strong>; musi być w katalogu głównym<br>
+            wpisujemy do niego wszystko czego nie chcemy commitować np. node__modules
+          </p>
+          <h4 class="day__subtitle">
+            YARN
+          </h4>
+          <p class="day__paragraph">
+            Alternatywą dla NPM jest <a class="web-link" href="https://yarnpkg.com/">YARN</a> - działa podobnie, można stosować zamiennie
+          </p>
+        </article>
       </article>
     </section>
 
